@@ -87,6 +87,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CourseProjectDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="CustomUserControl\CategoriesStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomUserControl\CategoriesStatistics.Designer.cs">
+      <DependentUpon>CategoriesStatistics.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomUserControl\IncomeExpensesUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AppForms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomUserControl\CategoriesStatistics.resx">
+      <DependentUpon>CategoriesStatistics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomUserControl\IncomeExpensesUserControl.resx">
       <DependentUpon>IncomeExpensesUserControl.cs</DependentUpon>
@@ -151,6 +160,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\add_circle_create_expand_new_plus_icon_123218.png" />
+    <None Include="Resources\not-visible-interface-symbol-of-an-eye-with-a-slash-on-it_icon-icons.com_57783.png" />
+    <None Include="Resources\4115230-cancel-close-cross-delete_114048.png" />
     <Content Include="wallet_payment_purchase_coin_cash_money_icon_141978.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -63,9 +63,29 @@ namespace WalletApp.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4115230_cancel_close_cross_delete_114048 {
+            get {
+                object obj = ResourceManager.GetObject("4115230-cancel-close-cross-delete_114048", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add_circle_create_expand_new_plus_icon_123218 {
             get {
                 object obj = ResourceManager.GetObject("add_circle_create_expand_new_plus_icon_123218", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap not_visible_interface_symbol_of_an_eye_with_a_slash_on_it_icon_icons_com_57783 {
+            get {
+                object obj = ResourceManager.GetObject("not-visible-interface-symbol-of-an-eye-with-a-slash-on-it_icon-icons.com_57783", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

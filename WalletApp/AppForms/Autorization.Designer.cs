@@ -36,10 +36,11 @@ namespace WalletApp.AppForms
             this.LoginButton = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.RegistrationButton = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.AuthorizationButton = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.PasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.LoginTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.CloseButton = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.PasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -76,8 +77,9 @@ namespace WalletApp.AppForms
             this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(68, 80);
+            this.guna2CustomGradientPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
-            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(315, 67);
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(315, 66);
             this.guna2CustomGradientPanel2.TabIndex = 15;
             // 
             // LoginButton
@@ -95,8 +97,9 @@ namespace WalletApp.AppForms
             this.LoginButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LoginButton.ForeColor = System.Drawing.Color.Black;
             this.LoginButton.Location = new System.Drawing.Point(7, 5);
+            this.LoginButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(142, 57);
+            this.LoginButton.Size = new System.Drawing.Size(141, 57);
             this.LoginButton.TabIndex = 13;
             this.LoginButton.Text = "Вход";
             this.LoginButton.UseTransparentBackground = true;
@@ -117,6 +120,7 @@ namespace WalletApp.AppForms
             this.RegistrationButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RegistrationButton.ForeColor = System.Drawing.Color.Black;
             this.RegistrationButton.Location = new System.Drawing.Point(147, 5);
+            this.RegistrationButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RegistrationButton.Name = "RegistrationButton";
             this.RegistrationButton.Size = new System.Drawing.Size(161, 57);
             this.RegistrationButton.TabIndex = 14;
@@ -139,37 +143,14 @@ namespace WalletApp.AppForms
             this.AuthorizationButton.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.AuthorizationButton.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AuthorizationButton.ForeColor = System.Drawing.Color.Black;
-            this.AuthorizationButton.Location = new System.Drawing.Point(130, 537);
+            this.AuthorizationButton.Location = new System.Drawing.Point(131, 537);
+            this.AuthorizationButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AuthorizationButton.Name = "AuthorizationButton";
-            this.AuthorizationButton.Size = new System.Drawing.Size(180, 45);
+            this.AuthorizationButton.Size = new System.Drawing.Size(180, 46);
             this.AuthorizationButton.TabIndex = 12;
             this.AuthorizationButton.Text = "Войти";
             this.AuthorizationButton.UseTransparentBackground = true;
             this.AuthorizationButton.Click += new System.EventHandler(this.AuthorizationButton_Click);
-            // 
-            // PasswordTextBox
-            // 
-            this.PasswordTextBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.PasswordTextBox.BackColor = System.Drawing.Color.Transparent;
-            this.PasswordTextBox.BorderRadius = 15;
-            this.PasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.PasswordTextBox.DefaultText = "123";
-            this.PasswordTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.PasswordTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.PasswordTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PasswordTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PasswordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PasswordTextBox.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.PasswordTextBox.ForeColor = System.Drawing.Color.Black;
-            this.PasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PasswordTextBox.Location = new System.Drawing.Point(68, 341);
-            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.PasswordTextBox.PlaceholderText = "";
-            this.PasswordTextBox.SelectedText = "";
-            this.PasswordTextBox.Size = new System.Drawing.Size(315, 59);
-            this.PasswordTextBox.TabIndex = 10;
             // 
             // LoginTextBox
             // 
@@ -221,16 +202,66 @@ namespace WalletApp.AppForms
             this.label4.TabIndex = 7;
             this.label4.Text = "Логин";
             // 
+            // CloseButton
+            // 
+            this.CloseButton.BorderRadius = 5;
+            this.CloseButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.CloseButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.CloseButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.CloseButton.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.CloseButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.CloseButton.FillColor = System.Drawing.Color.Red;
+            this.CloseButton.FillColor2 = System.Drawing.Color.Red;
+            this.CloseButton.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.CloseButton.ForeColor = System.Drawing.Color.White;
+            this.CloseButton.Image = global::WalletApp.Properties.Resources._4115230_cancel_close_cross_delete_114048;
+            this.CloseButton.ImageOffset = new System.Drawing.Point(1, 0);
+            this.CloseButton.ImageSize = new System.Drawing.Size(25, 25);
+            this.CloseButton.Location = new System.Drawing.Point(994, 12);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(45, 26);
+            this.CloseButton.TabIndex = 3;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
+            // 
+            // PasswordTextBox
+            // 
+            this.PasswordTextBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.PasswordTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.PasswordTextBox.BorderRadius = 15;
+            this.PasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PasswordTextBox.DefaultText = "123";
+            this.PasswordTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PasswordTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PasswordTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTextBox.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.PasswordTextBox.ForeColor = System.Drawing.Color.Black;
+            this.PasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTextBox.IconRight = global::WalletApp.Properties.Resources.not_visible_interface_symbol_of_an_eye_with_a_slash_on_it_icon_icons_com_57783;
+            this.PasswordTextBox.IconRightOffset = new System.Drawing.Point(10, 0);
+            this.PasswordTextBox.Location = new System.Drawing.Point(68, 341);
+            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.PasswordTextBox.Name = "PasswordTextBox";
+            this.PasswordTextBox.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.PasswordTextBox.PlaceholderText = "";
+            this.PasswordTextBox.SelectedText = "";
+            this.PasswordTextBox.Size = new System.Drawing.Size(315, 59);
+            this.PasswordTextBox.TabIndex = 10;
+            this.PasswordTextBox.IconRightClick += new System.EventHandler(this.PasswordTextBox_IconRightClick);
+            // 
             // Autorization
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1050, 766);
+            this.ClientSize = new System.Drawing.Size(1051, 766);
+            this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.guna2CustomGradientPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MinimumSize = new System.Drawing.Size(444, 698);
+            this.MinimumSize = new System.Drawing.Size(443, 696);
             this.Name = "Autorization";
             this.Text = "Авторизация";
             this.guna2CustomGradientPanel1.ResumeLayout(false);
@@ -250,5 +281,6 @@ namespace WalletApp.AppForms
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
         private Guna.UI2.WinForms.Guna2GradientTileButton RegistrationButton;
+        private Guna.UI2.WinForms.Guna2GradientButton CloseButton;
     }
 }
