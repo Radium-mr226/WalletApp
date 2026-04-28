@@ -67,47 +67,43 @@ namespace WalletApp.AppForms
             FillExpenseList();
             FillIncomeList();
             FillMainPage();
-
+            FillGoalsPage();
         }
         private void FillExpenseList()
         {
             List<transactions> _transactionList = Program.context.transactions.Where(p => p.is_income == false && p.user_id == _user.user_id).OrderBy(p => p.transaction_date).ToList();
             if (_transactionList.Count != 0)
-
+            {
+                ExpensesGradientPanel.Visible = true;
                 foreach (transactions trans in _transactionList)
                 {
                     var transaction = new IncomeExpensesUserControl(trans);
                     ExStatfFowLayoutPanel.Controls.Add(transaction);
                 }
-            //var _transactionList = Program.context.transactions
-            //    .Where(p => p.is_income == false && p.user_id == _user.user_id)
-            //    .OrderBy(p => p.transaction_date)
-            //    .ToList();
+            }
+            else if (_transactionList.Count == 0)
+            {
+               ExpensesGradientPanel.Visible = false;
 
-            //foreach (var trans in _transactionList)
-            //{
-            //    var transaction = new IncomeExpensesUserControl(trans);
 
-            //    // 🔍 Проверка перед добавлением
-            //    Console.WriteLine($"Создан контрол: Size={transaction.Size}, Visible={transaction.Visible}");
-
-            //    ExStatfFowLayoutPanel.Controls.Add(transaction);
-
-            //    // 🔍 Проверка после добавления
-            //    Console.WriteLine($"Добавлен. Всего контролов: {ExStatfFowLayoutPanel.Controls.Count}");
-            //}
+            }
         }
 
         private void FillIncomeList()
         {
             List<transactions> _transactionList = Program.context.transactions.Where(p => p.is_income == true && p.user_id == _user.user_id).OrderBy(p => p.transaction_date).ToList();
             if (_transactionList.Count != 0)
+            {
                 foreach (transactions trans in _transactionList)
                 {
                     var transaction = new IncomeExpensesUserControl(trans);
-                    IncStatfFowLayoutPanel.Controls.Add(transaction);
+                    IncomeStatfFowLayoutPanel.Controls.Add(transaction);
                 }
-
+            }
+            else if (_transactionList.Count == 0)
+            {
+                IncomeStatfFowLayoutPanel.Visible = false;
+            }
         }
 
         private void AddBudgetTextBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -185,7 +181,7 @@ namespace WalletApp.AppForms
         // Сохранине нового бюджета
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if (!ValidateNewBudget()
+            if (!ValidateNewBudget())
             {
                 return;
             }
@@ -194,6 +190,7 @@ namespace WalletApp.AppForms
             budget_Periods.start_date = BudgetStartDateTimePicker.Value;
             budget_Periods.end_date = BudgetEndDateTimePicker.Value;
             budget_Periods.planned_budget = Convert.ToInt32(AddBudgetTextBox.Text) - Convert.ToInt32(transferToGoalTextBox.Text);
+            Program.context.budget_periods.Add(budget_Periods);
         }
 
         private bool ValidateNewBudget()
@@ -221,9 +218,6 @@ namespace WalletApp.AppForms
                 
             }
             
-            
-
-            
             var transactions = Program.context.transactions
                 .Where(t => t.user_id == period.user_id &&
                             t.transaction_date >= period.start_date &&
@@ -238,9 +232,55 @@ namespace WalletApp.AppForms
             MinusMainLabel.Text = transactions
                 .Where(t => !t.is_income)
                 .Sum(t => t.amount).ToString();
-
+            decimal spentForDay = Program.context.transactions
+                    .Where(p => p.user_id == _user.user_id
+                     && !p.is_income
+                     && p.transaction_date == DateTime.Today)
+                    .Sum(p => (decimal?)p.amount) ?? 0m;
             int inclusiveDays = (int)(period.end_date.Date - period.start_date.Date).TotalDays + 1;
-            
+            decimal leftMoneyForDay = (decimal)(period.planned_budget / (period.end_date - period.start_date).Days - spentForDay);
+
+
+            DayLeftMoneyMainLabel.Text = "На этот день у вас осталось " + leftMoneyForDay.ToString("N2");
+
+
+        }
+
+        private void FillGoalsPage()
+        {
+            var period = Program.context.budget_periods.Where(b => b.user_id == _user.user_id)
+                .OrderByDescending(b => b.start_date)
+                .FirstOrDefault();
+            savings_goals savingGoals = Program.context.savings_goals.FirstOrDefault(p => p.user_id == _user.user_id);
+
+            if (savingGoals == null)
+            {
+                HaveNeedGoalLanel.Text = "Цель не найдена";
+                return;
+            }
+
+            // Приведение к decimal? внутри Sum, а ?? 0m применяется к РЕЗУЛЬТАТУ запроса
+            decimal currentAmount = Program.context.savings_transfers
+                .Where(p => p.goal_id == savingGoals.goal_id)
+                .Sum(p => (decimal?)p.amount) ?? 0m;
+
+            HaveNeedGoalLanel.Text = $"{currentAmount}\n{savingGoals.target_amount}";
+            var categoriesStat = Program.context.transactions.Where(p => p.user_id == _user.user_id
+                && p.transaction_date >= period.start_date
+                && p.transaction_date <= period.end_date)
+                .OrderBy(p => p.category_id)
+                .ToList();
+            foreach (transactions trans in categories)
+            {
+                var labelCat = new Label();
+                CategotyFlowLayoutPanel.Controls.Add(labelCat);
+            }
+            CategotyFlowLayoutPanel.Controls.Add(labelCat)
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -14,9 +14,11 @@ namespace WalletApp.AppForms
     public partial class Autorization : Form
     {
         private bool isSignIn = true;
+        private bool isPassVisible = false;
         public Autorization()
         {
             InitializeComponent();
+            PasswordTextBox.UseSystemPasswordChar = true;
         }
 
 
@@ -108,6 +110,17 @@ namespace WalletApp.AppForms
                     MessageBox.Show(ex.Message.ToString());
                 }
             }
+        }
+
+        private void PasswordTextBox_IconRightClick(object sender, EventArgs e)
+        {
+            PasswordTextBox.UseSystemPasswordChar = isPassVisible;
+            isPassVisible = !isPassVisible;
+        }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
