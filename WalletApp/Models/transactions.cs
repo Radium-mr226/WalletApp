@@ -17,7 +17,6 @@ namespace WalletApp.Models
 
         public decimal amount { get; set; }
 
-        [Column(TypeName = "date")]
         public DateTime transaction_date { get; set; }
 
         public bool is_income { get; set; }

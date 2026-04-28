@@ -24,6 +24,7 @@ namespace WalletApp.CustomUserControl
         {
             CatergotyNameLabel.Text = _transaction.categories.name;
             AmountLabel.Text = _transaction.amount.ToString();
+            DateLabel.Text = Convert.ToDateTime(_transaction.transaction_date).Date.ToString();
             
         }
 
