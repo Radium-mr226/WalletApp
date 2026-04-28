@@ -36,10 +36,10 @@ namespace WalletApp.AppForms
             this.LoginButton = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.RegistrationButton = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.AuthorizationButton = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.PasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.LoginTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.PasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -58,10 +58,9 @@ namespace WalletApp.AppForms
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(173)))), ((int)(((byte)(255)))));
             this.guna2CustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(173)))), ((int)(((byte)(255)))));
             this.guna2CustomGradientPanel1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(173)))), ((int)(((byte)(255)))));
-            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(303, 71);
-            this.guna2CustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2CustomGradientPanel1.Location = new System.Drawing.Point(227, 58);
             this.guna2CustomGradientPanel1.Name = "guna2CustomGradientPanel1";
-            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(444, 635);
+            this.guna2CustomGradientPanel1.Size = new System.Drawing.Size(333, 516);
             this.guna2CustomGradientPanel1.TabIndex = 2;
             // 
             // guna2CustomGradientPanel2
@@ -75,9 +74,10 @@ namespace WalletApp.AppForms
             this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(68, 80);
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(51, 65);
+            this.guna2CustomGradientPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
-            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(315, 67);
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(236, 54);
             this.guna2CustomGradientPanel2.TabIndex = 15;
             // 
             // LoginButton
@@ -94,9 +94,10 @@ namespace WalletApp.AppForms
             this.LoginButton.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.LoginButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LoginButton.ForeColor = System.Drawing.Color.Black;
-            this.LoginButton.Location = new System.Drawing.Point(7, 5);
+            this.LoginButton.Location = new System.Drawing.Point(5, 4);
+            this.LoginButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(142, 57);
+            this.LoginButton.Size = new System.Drawing.Size(106, 46);
             this.LoginButton.TabIndex = 13;
             this.LoginButton.Text = "Вход";
             this.LoginButton.UseTransparentBackground = true;
@@ -116,9 +117,10 @@ namespace WalletApp.AppForms
             this.RegistrationButton.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.RegistrationButton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RegistrationButton.ForeColor = System.Drawing.Color.Black;
-            this.RegistrationButton.Location = new System.Drawing.Point(147, 5);
+            this.RegistrationButton.Location = new System.Drawing.Point(110, 4);
+            this.RegistrationButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RegistrationButton.Name = "RegistrationButton";
-            this.RegistrationButton.Size = new System.Drawing.Size(161, 57);
+            this.RegistrationButton.Size = new System.Drawing.Size(121, 46);
             this.RegistrationButton.TabIndex = 14;
             this.RegistrationButton.Text = "Регистрация";
             this.RegistrationButton.UseTransparentBackground = true;
@@ -139,37 +141,14 @@ namespace WalletApp.AppForms
             this.AuthorizationButton.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.AuthorizationButton.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AuthorizationButton.ForeColor = System.Drawing.Color.Black;
-            this.AuthorizationButton.Location = new System.Drawing.Point(130, 537);
+            this.AuthorizationButton.Location = new System.Drawing.Point(98, 436);
+            this.AuthorizationButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AuthorizationButton.Name = "AuthorizationButton";
-            this.AuthorizationButton.Size = new System.Drawing.Size(180, 45);
+            this.AuthorizationButton.Size = new System.Drawing.Size(135, 37);
             this.AuthorizationButton.TabIndex = 12;
             this.AuthorizationButton.Text = "Войти";
             this.AuthorizationButton.UseTransparentBackground = true;
             this.AuthorizationButton.Click += new System.EventHandler(this.AuthorizationButton_Click);
-            // 
-            // PasswordTextBox
-            // 
-            this.PasswordTextBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.PasswordTextBox.BackColor = System.Drawing.Color.Transparent;
-            this.PasswordTextBox.BorderRadius = 15;
-            this.PasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.PasswordTextBox.DefaultText = "123";
-            this.PasswordTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.PasswordTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.PasswordTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PasswordTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PasswordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PasswordTextBox.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.PasswordTextBox.ForeColor = System.Drawing.Color.Black;
-            this.PasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PasswordTextBox.Location = new System.Drawing.Point(68, 341);
-            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.PasswordTextBox.PlaceholderText = "";
-            this.PasswordTextBox.SelectedText = "";
-            this.PasswordTextBox.Size = new System.Drawing.Size(315, 59);
-            this.PasswordTextBox.TabIndex = 10;
             // 
             // LoginTextBox
             // 
@@ -186,13 +165,13 @@ namespace WalletApp.AppForms
             this.LoginTextBox.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.LoginTextBox.ForeColor = System.Drawing.Color.Black;
             this.LoginTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.LoginTextBox.Location = new System.Drawing.Point(68, 212);
-            this.LoginTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.LoginTextBox.Location = new System.Drawing.Point(51, 172);
+            this.LoginTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LoginTextBox.Name = "LoginTextBox";
             this.LoginTextBox.PlaceholderForeColor = System.Drawing.Color.Black;
             this.LoginTextBox.PlaceholderText = "";
             this.LoginTextBox.SelectedText = "";
-            this.LoginTextBox.Size = new System.Drawing.Size(315, 59);
+            this.LoginTextBox.Size = new System.Drawing.Size(236, 48);
             this.LoginTextBox.TabIndex = 9;
             // 
             // label3
@@ -201,10 +180,9 @@ namespace WalletApp.AppForms
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(171, 298);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(128, 242);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 31);
+            this.label3.Size = new System.Drawing.Size(82, 25);
             this.label3.TabIndex = 8;
             this.label3.Text = "Пароль";
             // 
@@ -214,23 +192,48 @@ namespace WalletApp.AppForms
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(179, 169);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(134, 137);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 31);
+            this.label4.Size = new System.Drawing.Size(69, 25);
             this.label4.TabIndex = 7;
             this.label4.Text = "Логин";
             // 
+            // PasswordTextBox
+            // 
+            this.PasswordTextBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.PasswordTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.PasswordTextBox.BorderRadius = 15;
+            this.PasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PasswordTextBox.DefaultText = "123";
+            this.PasswordTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PasswordTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PasswordTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTextBox.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.PasswordTextBox.ForeColor = System.Drawing.Color.Black;
+            this.PasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTextBox.IconRight = global::WalletApp.Properties.Resources.not_visible_interface_symbol_of_an_eye_with_a_slash_on_it_icon_icons_com_57783;
+            this.PasswordTextBox.IconRightOffset = new System.Drawing.Point(10, 0);
+            this.PasswordTextBox.Location = new System.Drawing.Point(51, 277);
+            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PasswordTextBox.Name = "PasswordTextBox";
+            this.PasswordTextBox.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.PasswordTextBox.PlaceholderText = "";
+            this.PasswordTextBox.SelectedText = "";
+            this.PasswordTextBox.Size = new System.Drawing.Size(236, 48);
+            this.PasswordTextBox.TabIndex = 10;
+            this.PasswordTextBox.IconRightClick += new System.EventHandler(this.PasswordTextBox_IconRightClick);
+            // 
             // Autorization
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1050, 766);
+            this.ClientSize = new System.Drawing.Size(788, 622);
             this.Controls.Add(this.guna2CustomGradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.MinimumSize = new System.Drawing.Size(444, 698);
+            this.MinimumSize = new System.Drawing.Size(337, 574);
             this.Name = "Autorization";
             this.Text = "Авторизация";
             this.guna2CustomGradientPanel1.ResumeLayout(false);
