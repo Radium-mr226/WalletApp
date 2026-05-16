@@ -8,7 +8,7 @@ namespace WalletApp.Models
     public partial class CourseProjectDB : DbContext
     {
         public CourseProjectDB()
-            : base("name=CourseProjectDB1")
+            : base("name=CourseProjectDB3")
         {
         }
 
@@ -16,6 +16,7 @@ namespace WalletApp.Models
         public virtual DbSet<categories> categories { get; set; }
         public virtual DbSet<savings_goals> savings_goals { get; set; }
         public virtual DbSet<savings_transfers> savings_transfers { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<transactions> transactions { get; set; }
         public virtual DbSet<users> users { get; set; }
 

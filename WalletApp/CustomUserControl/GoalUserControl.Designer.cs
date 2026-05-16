@@ -89,10 +89,6 @@
             this.guna2CustomGradientPanel10.Controls.Add(this.GoalNameLabel);
             this.guna2CustomGradientPanel10.Controls.Add(this.GoalDescriptionLabel);
             this.guna2CustomGradientPanel10.Controls.Add(this.guna2CustomGradientPanel5);
-            this.guna2CustomGradientPanel10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel10.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel10.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel10.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.guna2CustomGradientPanel10.Location = new System.Drawing.Point(0, 0);
             this.guna2CustomGradientPanel10.Name = "guna2CustomGradientPanel10";
             this.guna2CustomGradientPanel10.Size = new System.Drawing.Size(953, 200);
@@ -100,7 +96,7 @@
             // 
             // GoalUserControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.guna2CustomGradientPanel10);

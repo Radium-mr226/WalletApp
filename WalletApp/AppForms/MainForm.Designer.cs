@@ -36,11 +36,10 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.MainPage = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.NewNoteMainPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
@@ -57,22 +56,21 @@
             this.DayLeftMoneyMainPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.DayLeftMoneyMainLabel = new System.Windows.Forms.Label();
             this.ChartSpentsMainPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.flowLayoutPanelMainCat = new System.Windows.Forms.FlowLayoutPanel();
             this.ChartCenterLabel = new System.Windows.Forms.Label();
             this.MainChartCategories = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.WarningMainLabel = new System.Windows.Forms.Label();
+            this.statisticsPage = new System.Windows.Forms.TabPage();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2CustomGradientPanel8 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.CategotyFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.CategoriesChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.AllTransactionCatChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.ExpensesGradientPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.ExStatfFowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.IncomeStatfFowLayoutPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.IncomesGradientPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.IncomeStatfFowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.GoalsPage = new System.Windows.Forms.TabPage();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.AddTransferToGoalPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
@@ -83,7 +81,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.BudgetPage = new System.Windows.Forms.TabPage();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2CustomGradientPanel6 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
@@ -102,12 +100,14 @@
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.LogOutButton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.WarningMainLabel = new System.Windows.Forms.Label();
+            this.tableLayoutPanelCategories = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanelCategoriesStatistics = new System.Windows.Forms.TableLayoutPanel();
+            this.CategotyFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.WarningStatLabel = new System.Windows.Forms.Label();
             this.WarningGoalsLabel = new System.Windows.Forms.Label();
-            this.WarningBudgetLabel = new System.Windows.Forms.Label();
             this.guna2TabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.MainPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -122,7 +122,7 @@
             this.DayLeftMoneyMainPanel.SuspendLayout();
             this.ChartSpentsMainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainChartCategories)).BeginInit();
-            this.tabPage2.SuspendLayout();
+            this.statisticsPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -133,8 +133,8 @@
             this.guna2CustomGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AllTransactionCatChart)).BeginInit();
             this.ExpensesGradientPanel.SuspendLayout();
-            this.IncomeStatfFowLayoutPanel.SuspendLayout();
-            this.tabPage3.SuspendLayout();
+            this.IncomesGradientPanel.SuspendLayout();
+            this.GoalsPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.Panel1.SuspendLayout();
             this.splitContainer3.Panel2.SuspendLayout();
@@ -144,7 +144,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2CustomGradientPanel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            this.tabPage4.SuspendLayout();
+            this.BudgetPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
             this.splitContainer4.Panel1.SuspendLayout();
             this.splitContainer4.Panel2.SuspendLayout();
@@ -154,15 +154,17 @@
             this.guna2CustomGradientPanel7.SuspendLayout();
             this.guna2CustomGradientPanel9.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
+            this.CategotyFlowLayoutPanel.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2TabControl1
             // 
             this.guna2TabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
-            this.guna2TabControl1.Controls.Add(this.tabPage1);
-            this.guna2TabControl1.Controls.Add(this.tabPage2);
-            this.guna2TabControl1.Controls.Add(this.tabPage3);
-            this.guna2TabControl1.Controls.Add(this.tabPage4);
+            this.guna2TabControl1.Controls.Add(this.MainPage);
+            this.guna2TabControl1.Controls.Add(this.statisticsPage);
+            this.guna2TabControl1.Controls.Add(this.GoalsPage);
+            this.guna2TabControl1.Controls.Add(this.BudgetPage);
             this.guna2TabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2TabControl1.ItemSize = new System.Drawing.Size(180, 40);
             this.guna2TabControl1.Location = new System.Drawing.Point(0, 0);
@@ -188,17 +190,17 @@
             this.guna2TabControl1.TabIndex = 0;
             this.guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(253)))));
             // 
-            // tabPage1
+            // MainPage
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
-            this.tabPage1.Controls.Add(this.splitContainer1);
-            this.tabPage1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tabPage1.Location = new System.Drawing.Point(184, 4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1304, 949);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Главная";
+            this.MainPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
+            this.MainPage.Controls.Add(this.splitContainer1);
+            this.MainPage.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MainPage.Location = new System.Drawing.Point(184, 4);
+            this.MainPage.Name = "MainPage";
+            this.MainPage.Padding = new System.Windows.Forms.Padding(3);
+            this.MainPage.Size = new System.Drawing.Size(1304, 949);
+            this.MainPage.TabIndex = 0;
+            this.MainPage.Text = "Главная";
             // 
             // splitContainer1
             // 
@@ -211,11 +213,8 @@
             // 
             this.splitContainer1.Panel1.AutoScroll = true;
             this.splitContainer1.Panel1.Controls.Add(this.flowLayoutPanel1);
+            this.splitContainer1.Panel1.Controls.Add(this.WarningMainLabel);
             this.splitContainer1.Panel1.Padding = new System.Windows.Forms.Padding(20);
-            // 
-            // splitContainer1.Panel2
-            // 
-            this.splitContainer1.Panel2.Controls.Add(this.WarningMainLabel);
             this.splitContainer1.Size = new System.Drawing.Size(1298, 943);
             this.splitContainer1.SplitterDistance = 1056;
             this.splitContainer1.TabIndex = 0;
@@ -240,10 +239,6 @@
             this.NewNoteMainPanel.Controls.Add(this.NewNoteDescriptionMainLabel);
             this.NewNoteMainPanel.Controls.Add(this.NewNoteMainLabel);
             this.NewNoteMainPanel.Controls.Add(this.NewNoteMainPoctireBox);
-            this.NewNoteMainPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.NewNoteMainPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.NewNoteMainPanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.NewNoteMainPanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.NewNoteMainPanel.Location = new System.Drawing.Point(3, 3);
             this.NewNoteMainPanel.Name = "NewNoteMainPanel";
             this.NewNoteMainPanel.Size = new System.Drawing.Size(953, 200);
@@ -267,7 +262,7 @@
             this.NewNoteMainLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NewNoteMainLabel.Location = new System.Drawing.Point(202, 34);
             this.NewNoteMainLabel.Name = "NewNoteMainLabel";
-            this.NewNoteMainLabel.Size = new System.Drawing.Size(232, 37);
+            this.NewNoteMainLabel.Size = new System.Drawing.Size(284, 45);
             this.NewNoteMainLabel.TabIndex = 1;
             this.NewNoteMainLabel.Text = "Добавить запись";
             this.NewNoteMainLabel.Click += new System.EventHandler(this.NewNoteMainLabel_Click);
@@ -295,10 +290,6 @@
             this.InfoPlusMinusBudgetMainPanel.Controls.Add(this.MinusMainPanel);
             this.InfoPlusMinusBudgetMainPanel.Controls.Add(this.PlusMainPanel);
             this.InfoPlusMinusBudgetMainPanel.Controls.Add(this.BudgetMainPanel);
-            this.InfoPlusMinusBudgetMainPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.InfoPlusMinusBudgetMainPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.InfoPlusMinusBudgetMainPanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.InfoPlusMinusBudgetMainPanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.InfoPlusMinusBudgetMainPanel.Location = new System.Drawing.Point(3, 209);
             this.InfoPlusMinusBudgetMainPanel.Name = "InfoPlusMinusBudgetMainPanel";
             this.InfoPlusMinusBudgetMainPanel.Padding = new System.Windows.Forms.Padding(20);
@@ -385,10 +376,6 @@
             this.DayLeftMoneyMainPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DayLeftMoneyMainPanel.BorderRadius = 30;
             this.DayLeftMoneyMainPanel.Controls.Add(this.DayLeftMoneyMainLabel);
-            this.DayLeftMoneyMainPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.DayLeftMoneyMainPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.DayLeftMoneyMainPanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.DayLeftMoneyMainPanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.DayLeftMoneyMainPanel.Location = new System.Drawing.Point(3, 415);
             this.DayLeftMoneyMainPanel.Name = "DayLeftMoneyMainPanel";
             this.DayLeftMoneyMainPanel.Padding = new System.Windows.Forms.Padding(20);
@@ -411,28 +398,14 @@
             // 
             this.ChartSpentsMainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.ChartSpentsMainPanel.BorderRadius = 30;
-            this.ChartSpentsMainPanel.Controls.Add(this.flowLayoutPanelMainCat);
+            this.ChartSpentsMainPanel.Controls.Add(this.flowLayoutPanel4);
             this.ChartSpentsMainPanel.Controls.Add(this.ChartCenterLabel);
             this.ChartSpentsMainPanel.Controls.Add(this.MainChartCategories);
-            this.ChartSpentsMainPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.ChartSpentsMainPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.ChartSpentsMainPanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.ChartSpentsMainPanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.ChartSpentsMainPanel.Location = new System.Drawing.Point(3, 621);
             this.ChartSpentsMainPanel.Name = "ChartSpentsMainPanel";
             this.ChartSpentsMainPanel.Padding = new System.Windows.Forms.Padding(20);
             this.ChartSpentsMainPanel.Size = new System.Drawing.Size(953, 552);
             this.ChartSpentsMainPanel.TabIndex = 9;
-            // 
-            // flowLayoutPanelMainCat
-            // 
-            this.flowLayoutPanelMainCat.AutoScroll = true;
-            this.flowLayoutPanelMainCat.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanelMainCat.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanelMainCat.Location = new System.Drawing.Point(23, 23);
-            this.flowLayoutPanelMainCat.Name = "flowLayoutPanelMainCat";
-            this.flowLayoutPanelMainCat.Size = new System.Drawing.Size(395, 506);
-            this.flowLayoutPanelMainCat.TabIndex = 13;
             // 
             // ChartCenterLabel
             // 
@@ -461,17 +434,29 @@
             this.MainChartCategories.TabIndex = 5;
             this.MainChartCategories.Text = "chart1";
             // 
-            // tabPage2
+            // WarningMainLabel
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
-            this.tabPage2.Controls.Add(this.splitContainer2);
-            this.tabPage2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tabPage2.Location = new System.Drawing.Point(184, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1304, 949);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Статистика";
+            this.WarningMainLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.WarningMainLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 25F, System.Drawing.FontStyle.Bold);
+            this.WarningMainLabel.ForeColor = System.Drawing.Color.IndianRed;
+            this.WarningMainLabel.Location = new System.Drawing.Point(20, 20);
+            this.WarningMainLabel.Name = "WarningMainLabel";
+            this.WarningMainLabel.Size = new System.Drawing.Size(1016, 903);
+            this.WarningMainLabel.TabIndex = 0;
+            this.WarningMainLabel.Text = "Для начала необходимо добавить новый бюджет";
+            this.WarningMainLabel.Visible = false;
+            // 
+            // statisticsPage
+            // 
+            this.statisticsPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
+            this.statisticsPage.Controls.Add(this.splitContainer2);
+            this.statisticsPage.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.statisticsPage.Location = new System.Drawing.Point(184, 4);
+            this.statisticsPage.Name = "statisticsPage";
+            this.statisticsPage.Padding = new System.Windows.Forms.Padding(3);
+            this.statisticsPage.Size = new System.Drawing.Size(1304, 949);
+            this.statisticsPage.TabIndex = 1;
+            this.statisticsPage.Text = "Статистика";
             // 
             // splitContainer2
             // 
@@ -484,11 +469,8 @@
             // 
             this.splitContainer2.Panel1.AutoScroll = true;
             this.splitContainer2.Panel1.Controls.Add(this.flowLayoutPanel2);
+            this.splitContainer2.Panel1.Controls.Add(this.WarningStatLabel);
             this.splitContainer2.Panel1.Padding = new System.Windows.Forms.Padding(20);
-            // 
-            // splitContainer2.Panel2
-            // 
-            this.splitContainer2.Panel2.Controls.Add(this.WarningStatLabel);
             this.splitContainer2.Size = new System.Drawing.Size(1298, 943);
             this.splitContainer2.SplitterDistance = 1056;
             this.splitContainer2.TabIndex = 1;
@@ -499,7 +481,7 @@
             this.flowLayoutPanel2.Controls.Add(this.guna2CustomGradientPanel8);
             this.flowLayoutPanel2.Controls.Add(this.guna2CustomGradientPanel2);
             this.flowLayoutPanel2.Controls.Add(this.ExpensesGradientPanel);
-            this.flowLayoutPanel2.Controls.Add(this.IncomeStatfFowLayoutPanel);
+            this.flowLayoutPanel2.Controls.Add(this.IncomesGradientPanel);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(20, 20);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
@@ -512,25 +494,11 @@
             this.guna2CustomGradientPanel8.BorderRadius = 30;
             this.guna2CustomGradientPanel8.Controls.Add(this.CategotyFlowLayoutPanel);
             this.guna2CustomGradientPanel8.Controls.Add(this.CategoriesChart);
-            this.guna2CustomGradientPanel8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel8.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel8.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel8.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.guna2CustomGradientPanel8.Location = new System.Drawing.Point(3, 3);
             this.guna2CustomGradientPanel8.Name = "guna2CustomGradientPanel8";
             this.guna2CustomGradientPanel8.Padding = new System.Windows.Forms.Padding(20);
             this.guna2CustomGradientPanel8.Size = new System.Drawing.Size(953, 552);
             this.guna2CustomGradientPanel8.TabIndex = 9;
-            // 
-            // CategotyFlowLayoutPanel
-            // 
-            this.CategotyFlowLayoutPanel.AutoScroll = true;
-            this.CategotyFlowLayoutPanel.BackColor = System.Drawing.Color.Transparent;
-            this.CategotyFlowLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.CategotyFlowLayoutPanel.Location = new System.Drawing.Point(23, 23);
-            this.CategotyFlowLayoutPanel.Name = "CategotyFlowLayoutPanel";
-            this.CategotyFlowLayoutPanel.Size = new System.Drawing.Size(395, 506);
-            this.CategotyFlowLayoutPanel.TabIndex = 12;
             // 
             // CategoriesChart
             // 
@@ -554,10 +522,6 @@
             this.guna2CustomGradientPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CustomGradientPanel2.BorderRadius = 30;
             this.guna2CustomGradientPanel2.Controls.Add(this.AllTransactionCatChart);
-            this.guna2CustomGradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(3, 561);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Padding = new System.Windows.Forms.Padding(20);
@@ -566,14 +530,12 @@
             // 
             // AllTransactionCatChart
             // 
+            this.AllTransactionCatChart.BackColor = System.Drawing.Color.Transparent;
             chartArea3.Name = "ChartArea1";
             this.AllTransactionCatChart.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.AllTransactionCatChart.Legends.Add(legend3);
             this.AllTransactionCatChart.Location = new System.Drawing.Point(23, 23);
             this.AllTransactionCatChart.Name = "AllTransactionCatChart";
             series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
             series3.Name = "Series1";
             this.AllTransactionCatChart.Series.Add(series3);
             this.AllTransactionCatChart.Size = new System.Drawing.Size(907, 506);
@@ -585,10 +547,10 @@
             this.ExpensesGradientPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.ExpensesGradientPanel.BorderRadius = 30;
             this.ExpensesGradientPanel.Controls.Add(this.ExStatfFowLayoutPanel);
-            this.ExpensesGradientPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.ExpensesGradientPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.ExpensesGradientPanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.ExpensesGradientPanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            this.ExpensesGradientPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.ExpensesGradientPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.ExpensesGradientPanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.ExpensesGradientPanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ExpensesGradientPanel.Location = new System.Drawing.Point(3, 1119);
             this.ExpensesGradientPanel.Name = "ExpensesGradientPanel";
             this.ExpensesGradientPanel.Padding = new System.Windows.Forms.Padding(20);
@@ -605,42 +567,42 @@
             this.ExStatfFowLayoutPanel.Size = new System.Drawing.Size(913, 512);
             this.ExStatfFowLayoutPanel.TabIndex = 0;
             // 
+            // IncomesGradientPanel
+            // 
+            this.IncomesGradientPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.IncomesGradientPanel.BorderRadius = 30;
+            this.IncomesGradientPanel.Controls.Add(this.IncomeStatfFowLayoutPanel);
+            this.IncomesGradientPanel.FillColor = System.Drawing.Color.MediumSpringGreen;
+            this.IncomesGradientPanel.FillColor2 = System.Drawing.Color.MediumSpringGreen;
+            this.IncomesGradientPanel.FillColor3 = System.Drawing.Color.MediumSpringGreen;
+            this.IncomesGradientPanel.FillColor4 = System.Drawing.Color.MediumSpringGreen;
+            this.IncomesGradientPanel.Location = new System.Drawing.Point(3, 1677);
+            this.IncomesGradientPanel.Name = "IncomesGradientPanel";
+            this.IncomesGradientPanel.Padding = new System.Windows.Forms.Padding(20);
+            this.IncomesGradientPanel.Size = new System.Drawing.Size(953, 552);
+            this.IncomesGradientPanel.TabIndex = 14;
+            // 
             // IncomeStatfFowLayoutPanel
             // 
-            this.IncomeStatfFowLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.IncomeStatfFowLayoutPanel.BorderRadius = 30;
-            this.IncomeStatfFowLayoutPanel.Controls.Add(this.flowLayoutPanel4);
-            this.IncomeStatfFowLayoutPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(255)))), ((int)(((byte)(132)))));
-            this.IncomeStatfFowLayoutPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(255)))), ((int)(((byte)(132)))));
-            this.IncomeStatfFowLayoutPanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(255)))), ((int)(((byte)(132)))));
-            this.IncomeStatfFowLayoutPanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(255)))), ((int)(((byte)(132)))));
-            this.IncomeStatfFowLayoutPanel.Location = new System.Drawing.Point(3, 1677);
+            this.IncomeStatfFowLayoutPanel.AutoScroll = true;
+            this.IncomeStatfFowLayoutPanel.BackColor = System.Drawing.Color.Transparent;
+            this.IncomeStatfFowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.IncomeStatfFowLayoutPanel.Location = new System.Drawing.Point(20, 20);
             this.IncomeStatfFowLayoutPanel.Name = "IncomeStatfFowLayoutPanel";
-            this.IncomeStatfFowLayoutPanel.Padding = new System.Windows.Forms.Padding(20);
-            this.IncomeStatfFowLayoutPanel.Size = new System.Drawing.Size(953, 552);
-            this.IncomeStatfFowLayoutPanel.TabIndex = 14;
+            this.IncomeStatfFowLayoutPanel.Size = new System.Drawing.Size(913, 512);
+            this.IncomeStatfFowLayoutPanel.TabIndex = 0;
             // 
-            // flowLayoutPanel4
+            // GoalsPage
             // 
-            this.flowLayoutPanel4.AutoScroll = true;
-            this.flowLayoutPanel4.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(20, 20);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(913, 512);
-            this.flowLayoutPanel4.TabIndex = 0;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
-            this.tabPage3.Controls.Add(this.splitContainer3);
-            this.tabPage3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tabPage3.Location = new System.Drawing.Point(184, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1304, 949);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Копилка";
+            this.GoalsPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
+            this.GoalsPage.Controls.Add(this.splitContainer3);
+            this.GoalsPage.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.GoalsPage.Location = new System.Drawing.Point(184, 4);
+            this.GoalsPage.Name = "GoalsPage";
+            this.GoalsPage.Padding = new System.Windows.Forms.Padding(3);
+            this.GoalsPage.Size = new System.Drawing.Size(1304, 949);
+            this.GoalsPage.TabIndex = 2;
+            this.GoalsPage.Text = "Копилка";
             // 
             // splitContainer3
             // 
@@ -653,11 +615,8 @@
             // 
             this.splitContainer3.Panel1.AutoScroll = true;
             this.splitContainer3.Panel1.Controls.Add(this.flowLayoutPanel3);
+            this.splitContainer3.Panel1.Controls.Add(this.WarningGoalsLabel);
             this.splitContainer3.Panel1.Padding = new System.Windows.Forms.Padding(20);
-            // 
-            // splitContainer3.Panel2
-            // 
-            this.splitContainer3.Panel2.Controls.Add(this.WarningGoalsLabel);
             this.splitContainer3.Size = new System.Drawing.Size(1298, 943);
             this.splitContainer3.SplitterDistance = 1056;
             this.splitContainer3.TabIndex = 2;
@@ -681,10 +640,6 @@
             this.AddTransferToGoalPanel4.Controls.Add(this.label14);
             this.AddTransferToGoalPanel4.Controls.Add(this.label15);
             this.AddTransferToGoalPanel4.Controls.Add(this.guna2PictureBox1);
-            this.AddTransferToGoalPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.AddTransferToGoalPanel4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.AddTransferToGoalPanel4.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.AddTransferToGoalPanel4.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.AddTransferToGoalPanel4.Location = new System.Drawing.Point(3, 3);
             this.AddTransferToGoalPanel4.Name = "AddTransferToGoalPanel4";
             this.AddTransferToGoalPanel4.Size = new System.Drawing.Size(953, 200);
@@ -708,7 +663,7 @@
             this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label15.Location = new System.Drawing.Point(202, 34);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(352, 37);
+            this.label15.Size = new System.Drawing.Size(432, 45);
             this.label15.TabIndex = 1;
             this.label15.Text = "Добавить денег в копилку";
             this.label15.Click += new System.EventHandler(this.guna2CustomGradientPanel4_Click);
@@ -736,10 +691,6 @@
             this.guna2CustomGradientPanel10.Controls.Add(this.label16);
             this.guna2CustomGradientPanel10.Controls.Add(this.label17);
             this.guna2CustomGradientPanel10.Controls.Add(this.guna2PictureBox2);
-            this.guna2CustomGradientPanel10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel10.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel10.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel10.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.guna2CustomGradientPanel10.Location = new System.Drawing.Point(3, 209);
             this.guna2CustomGradientPanel10.Name = "guna2CustomGradientPanel10";
             this.guna2CustomGradientPanel10.Size = new System.Drawing.Size(953, 200);
@@ -763,7 +714,7 @@
             this.label17.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label17.Location = new System.Drawing.Point(202, 34);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(305, 37);
+            this.label17.Size = new System.Drawing.Size(375, 45);
             this.label17.TabIndex = 1;
             this.label17.Text = "Добавить новую цель ";
             this.label17.Click += new System.EventHandler(this.guna2PictureBox2_Click);
@@ -784,17 +735,17 @@
             this.guna2PictureBox2.TabStop = false;
             this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click);
             // 
-            // tabPage4
+            // BudgetPage
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
-            this.tabPage4.Controls.Add(this.splitContainer4);
-            this.tabPage4.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tabPage4.Location = new System.Drawing.Point(184, 4);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1304, 949);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Бюджет";
+            this.BudgetPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
+            this.BudgetPage.Controls.Add(this.splitContainer4);
+            this.BudgetPage.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BudgetPage.Location = new System.Drawing.Point(184, 4);
+            this.BudgetPage.Name = "BudgetPage";
+            this.BudgetPage.Padding = new System.Windows.Forms.Padding(3);
+            this.BudgetPage.Size = new System.Drawing.Size(1304, 949);
+            this.BudgetPage.TabIndex = 3;
+            this.BudgetPage.Text = "Бюджет";
             // 
             // splitContainer4
             // 
@@ -808,10 +759,6 @@
             this.splitContainer4.Panel1.AutoScroll = true;
             this.splitContainer4.Panel1.Controls.Add(this.flowLayoutPanel5);
             this.splitContainer4.Panel1.Padding = new System.Windows.Forms.Padding(20);
-            // 
-            // splitContainer4.Panel2
-            // 
-            this.splitContainer4.Panel2.Controls.Add(this.WarningBudgetLabel);
             this.splitContainer4.Size = new System.Drawing.Size(1298, 943);
             this.splitContainer4.SplitterDistance = 1056;
             this.splitContainer4.TabIndex = 2;
@@ -835,10 +782,6 @@
             this.guna2CustomGradientPanel6.BorderRadius = 30;
             this.guna2CustomGradientPanel6.Controls.Add(this.AddBudgetTextBox);
             this.guna2CustomGradientPanel6.Controls.Add(this.label10);
-            this.guna2CustomGradientPanel6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel6.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel6.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel6.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.guna2CustomGradientPanel6.Location = new System.Drawing.Point(3, 3);
             this.guna2CustomGradientPanel6.Name = "guna2CustomGradientPanel6";
             this.guna2CustomGradientPanel6.Padding = new System.Windows.Forms.Padding(20);
@@ -848,6 +791,7 @@
             // AddBudgetTextBox
             // 
             this.AddBudgetTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.AddBudgetTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.AddBudgetTextBox.BorderRadius = 15;
             this.AddBudgetTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.AddBudgetTextBox.DefaultText = "";
@@ -875,7 +819,7 @@
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
             this.label10.Location = new System.Drawing.Point(23, 43);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(331, 37);
+            this.label10.Size = new System.Drawing.Size(414, 46);
             this.label10.TabIndex = 0;
             this.label10.Text = "Введите сумму бюджета";
             // 
@@ -887,10 +831,6 @@
             this.guna2CustomGradientPanel7.Controls.Add(this.BudgetEndDateTimePicker);
             this.guna2CustomGradientPanel7.Controls.Add(this.BudgetStartDateTimePicker);
             this.guna2CustomGradientPanel7.Controls.Add(this.label11);
-            this.guna2CustomGradientPanel7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel7.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel7.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel7.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.guna2CustomGradientPanel7.Location = new System.Drawing.Point(3, 141);
             this.guna2CustomGradientPanel7.Name = "guna2CustomGradientPanel7";
             this.guna2CustomGradientPanel7.Padding = new System.Windows.Forms.Padding(20);
@@ -904,7 +844,7 @@
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
             this.label12.Location = new System.Drawing.Point(23, 207);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(322, 37);
+            this.label12.Size = new System.Drawing.Size(404, 46);
             this.label12.TabIndex = 4;
             this.label12.Text = "Укажите конец периода";
             // 
@@ -947,7 +887,7 @@
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
             this.label11.Location = new System.Drawing.Point(23, 67);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(336, 37);
+            this.label11.Size = new System.Drawing.Size(423, 46);
             this.label11.TabIndex = 1;
             this.label11.Text = "Укажите начало периода";
             // 
@@ -957,10 +897,6 @@
             this.guna2CustomGradientPanel9.BorderRadius = 30;
             this.guna2CustomGradientPanel9.Controls.Add(this.transferToGoalTextBox);
             this.guna2CustomGradientPanel9.Controls.Add(this.label13);
-            this.guna2CustomGradientPanel9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel9.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel9.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
-            this.guna2CustomGradientPanel9.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
             this.guna2CustomGradientPanel9.Location = new System.Drawing.Point(3, 470);
             this.guna2CustomGradientPanel9.Name = "guna2CustomGradientPanel9";
             this.guna2CustomGradientPanel9.Padding = new System.Windows.Forms.Padding(20);
@@ -970,6 +906,7 @@
             // transferToGoalTextBox
             // 
             this.transferToGoalTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.transferToGoalTextBox.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.transferToGoalTextBox.BorderRadius = 15;
             this.transferToGoalTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.transferToGoalTextBox.DefaultText = "";
@@ -1051,7 +988,7 @@
             this.LogOutButton.Size = new System.Drawing.Size(163, 45);
             this.LogOutButton.TabIndex = 1;
             this.LogOutButton.Text = "Выйти";
-            this.LogOutButton.Click += new System.EventHandler(this.guna2GradientButton1_Click);
+            this.LogOutButton.Click += new System.EventHandler(this.LogOutButton_Click);
             // 
             // guna2BorderlessForm1
             // 
@@ -1059,53 +996,81 @@
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // WarningMainLabel
+            // tableLayoutPanelCategories
             // 
-            this.WarningMainLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 25F, System.Drawing.FontStyle.Bold);
-            this.WarningMainLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.WarningMainLabel.Location = new System.Drawing.Point(1, 2);
-            this.WarningMainLabel.Name = "WarningMainLabel";
-            this.WarningMainLabel.Size = new System.Drawing.Size(232, 921);
-            this.WarningMainLabel.TabIndex = 0;
-            this.WarningMainLabel.Text = "Для начала необходимо добавить новый бюджет";
-            this.WarningMainLabel.Visible = false;
+            this.tableLayoutPanelCategories.AutoSize = true;
+            this.tableLayoutPanelCategories.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanelCategories.ColumnCount = 1;
+            this.tableLayoutPanelCategories.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelCategories.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanelCategories.Name = "tableLayoutPanelCategories";
+            this.tableLayoutPanelCategories.RowCount = 1;
+            this.tableLayoutPanelCategories.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelCategories.Size = new System.Drawing.Size(0, 0);
+            this.tableLayoutPanelCategories.TabIndex = 14;
+            // 
+            // tableLayoutPanelCategoriesStatistics
+            // 
+            this.tableLayoutPanelCategoriesStatistics.AutoSize = true;
+            this.tableLayoutPanelCategoriesStatistics.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanelCategoriesStatistics.ColumnCount = 1;
+            this.tableLayoutPanelCategoriesStatistics.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelCategoriesStatistics.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanelCategoriesStatistics.Name = "tableLayoutPanelCategoriesStatistics";
+            this.tableLayoutPanelCategoriesStatistics.RowCount = 1;
+            this.tableLayoutPanelCategoriesStatistics.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelCategoriesStatistics.Size = new System.Drawing.Size(0, 0);
+            this.tableLayoutPanelCategoriesStatistics.TabIndex = 15;
+            // 
+            // CategotyFlowLayoutPanel
+            // 
+            this.CategotyFlowLayoutPanel.AutoScroll = true;
+            this.CategotyFlowLayoutPanel.BackColor = System.Drawing.Color.Transparent;
+            this.CategotyFlowLayoutPanel.Controls.Add(this.tableLayoutPanelCategoriesStatistics);
+            this.CategotyFlowLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.CategotyFlowLayoutPanel.Location = new System.Drawing.Point(23, 23);
+            this.CategotyFlowLayoutPanel.Name = "CategotyFlowLayoutPanel";
+            this.CategotyFlowLayoutPanel.Size = new System.Drawing.Size(395, 506);
+            this.CategotyFlowLayoutPanel.TabIndex = 12;
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.AutoScroll = true;
+            this.flowLayoutPanel4.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel4.Controls.Add(this.tableLayoutPanelCategories);
+            this.flowLayoutPanel4.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(23, 23);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(395, 506);
+            this.flowLayoutPanel4.TabIndex = 15;
             // 
             // WarningStatLabel
             // 
+            this.WarningStatLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.WarningStatLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 25F, System.Drawing.FontStyle.Bold);
             this.WarningStatLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.WarningStatLabel.Location = new System.Drawing.Point(3, 11);
+            this.WarningStatLabel.Location = new System.Drawing.Point(20, 20);
             this.WarningStatLabel.Name = "WarningStatLabel";
-            this.WarningStatLabel.Size = new System.Drawing.Size(232, 921);
+            this.WarningStatLabel.Size = new System.Drawing.Size(1016, 903);
             this.WarningStatLabel.TabIndex = 1;
             this.WarningStatLabel.Text = "Для начала необходимо добавить новый бюджет";
             this.WarningStatLabel.Visible = false;
             // 
             // WarningGoalsLabel
             // 
+            this.WarningGoalsLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.WarningGoalsLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 25F, System.Drawing.FontStyle.Bold);
             this.WarningGoalsLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.WarningGoalsLabel.Location = new System.Drawing.Point(3, 11);
+            this.WarningGoalsLabel.Location = new System.Drawing.Point(20, 20);
             this.WarningGoalsLabel.Name = "WarningGoalsLabel";
-            this.WarningGoalsLabel.Size = new System.Drawing.Size(232, 921);
-            this.WarningGoalsLabel.TabIndex = 1;
+            this.WarningGoalsLabel.Size = new System.Drawing.Size(1016, 903);
+            this.WarningGoalsLabel.TabIndex = 2;
             this.WarningGoalsLabel.Text = "Для начала необходимо добавить новый бюджет";
             this.WarningGoalsLabel.Visible = false;
             // 
-            // WarningBudgetLabel
-            // 
-            this.WarningBudgetLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 25F, System.Drawing.FontStyle.Bold);
-            this.WarningBudgetLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.WarningBudgetLabel.Location = new System.Drawing.Point(3, 11);
-            this.WarningBudgetLabel.Name = "WarningBudgetLabel";
-            this.WarningBudgetLabel.Size = new System.Drawing.Size(232, 921);
-            this.WarningBudgetLabel.TabIndex = 1;
-            this.WarningBudgetLabel.Text = "Для начала необходимо добавить новый бюджет";
-            this.WarningBudgetLabel.Visible = false;
-            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1492, 957);
@@ -1122,7 +1087,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.guna2TabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
+            this.MainPage.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -1138,7 +1103,7 @@
             this.DayLeftMoneyMainPanel.ResumeLayout(false);
             this.ChartSpentsMainPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MainChartCategories)).EndInit();
-            this.tabPage2.ResumeLayout(false);
+            this.statisticsPage.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
@@ -1149,8 +1114,8 @@
             this.guna2CustomGradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AllTransactionCatChart)).EndInit();
             this.ExpensesGradientPanel.ResumeLayout(false);
-            this.IncomeStatfFowLayoutPanel.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
+            this.IncomesGradientPanel.ResumeLayout(false);
+            this.GoalsPage.ResumeLayout(false);
             this.splitContainer3.Panel1.ResumeLayout(false);
             this.splitContainer3.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
@@ -1162,7 +1127,7 @@
             this.guna2CustomGradientPanel10.ResumeLayout(false);
             this.guna2CustomGradientPanel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            this.tabPage4.ResumeLayout(false);
+            this.BudgetPage.ResumeLayout(false);
             this.splitContainer4.Panel1.ResumeLayout(false);
             this.splitContainer4.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).EndInit();
@@ -1174,16 +1139,20 @@
             this.guna2CustomGradientPanel7.PerformLayout();
             this.guna2CustomGradientPanel9.ResumeLayout(false);
             this.guna2CustomGradientPanel1.ResumeLayout(false);
+            this.CategotyFlowLayoutPanel.ResumeLayout(false);
+            this.CategotyFlowLayoutPanel.PerformLayout();
+            this.flowLayoutPanel4.ResumeLayout(false);
+            this.flowLayoutPanel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage MainPage;
+        private System.Windows.Forms.TabPage statisticsPage;
+        private System.Windows.Forms.TabPage GoalsPage;
+        private System.Windows.Forms.TabPage BudgetPage;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private Guna.Charts.WinForms.GunaAreaDataset gunaAreaDataset1;
@@ -1212,8 +1181,8 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart AllTransactionCatChart;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel ExpensesGradientPanel;
         private System.Windows.Forms.FlowLayoutPanel ExStatfFowLayoutPanel;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel IncomeStatfFowLayoutPanel;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel IncomesGradientPanel;
+        private System.Windows.Forms.FlowLayoutPanel IncomeStatfFowLayoutPanel;
         private System.Windows.Forms.SplitContainer splitContainer3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.SplitContainer splitContainer4;
@@ -1236,15 +1205,16 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2GradientButton LogOutButton;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private System.Windows.Forms.FlowLayoutPanel CategotyFlowLayoutPanel;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel10;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelMainCat;
         private System.Windows.Forms.Label WarningMainLabel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelCategories;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelCategoriesStatistics;
+        private System.Windows.Forms.FlowLayoutPanel CategotyFlowLayoutPanel;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.Label WarningStatLabel;
         private System.Windows.Forms.Label WarningGoalsLabel;
-        private System.Windows.Forms.Label WarningBudgetLabel;
     }
 }

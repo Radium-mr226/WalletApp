@@ -105,12 +105,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CourseProjectDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="CustomUserControl\CategoriesStatistics.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CustomUserControl\CategoriesStatistics.Designer.cs">
-      <DependentUpon>CategoriesStatistics.cs</DependentUpon>
-    </Compile>
     <Compile Include="CustomUserControl\GoalUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -125,9 +119,11 @@
     </Compile>
     <Compile Include="Models\budget_periods.cs" />
     <Compile Include="Models\categories.cs" />
+    <Compile Include="Models\CategoryStat.cs" />
     <Compile Include="Models\CourseProjectDB.cs" />
     <Compile Include="Models\savings_goals.cs" />
     <Compile Include="Models\savings_transfers.cs" />
+    <Compile Include="Models\sysdiagrams.cs" />
     <Compile Include="Models\transactions.cs" />
     <Compile Include="Models\users.cs" />
     <Compile Include="Program.cs" />
@@ -146,9 +142,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AppForms\NewNoteForm.resx">
       <DependentUpon>NewNoteForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CustomUserControl\CategoriesStatistics.resx">
-      <DependentUpon>CategoriesStatistics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomUserControl\GoalUserControl.resx">
       <DependentUpon>GoalUserControl.cs</DependentUpon>

@@ -129,12 +129,11 @@ namespace WalletApp.AppForms
         {
             if (CategoryTypeComboBox.SelectedIndex > 0 )
             {
-                bool categoryType;
                 if (CategoryTypeComboBox.SelectedIndex == 1)
                     categoryType = false;
-                else //if (CategoryTypeComboBox.SelectedIndex == 2)
+                else if (CategoryTypeComboBox.SelectedIndex == 2)
                     categoryType = true;
-                //else categoryType = false;
+                else categoryType = false;
 
                 var categories = Program.context.categories
                     .Where(c => c.parent_id == null && c.is_income == categoryType)
@@ -171,7 +170,9 @@ namespace WalletApp.AppForms
                 if (CategoryComboBox2.SelectedIndex > 0)
                     transaction.category_id = (int)CategoryComboBox2.SelectedValue;
                 else transaction.category_id = (int)CategoryComboBox1.SelectedValue;
-                transaction.amount = Convert.ToDecimal(AmountTextBox.Text);
+                if(categoryType == false) 
+                transaction.amount = Convert.ToDecimal("-" + AmountTextBox.Text);
+                else transaction.amount = Convert.ToDecimal(AmountTextBox.Text);
                 transaction.transaction_date = DateTime.Now;
                 transaction.is_income = categoryType;
                 MessageBox.Show("Транзакция сохранена","Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);   
