@@ -8,7 +8,7 @@ namespace WalletApp.Models
     public partial class CourseProjectDB : DbContext
     {
         public CourseProjectDB()
-            : base("name=CourseProjectDB")
+            : base("name=CourseProjectDB1")
         {
         }
 

@@ -30,6 +30,8 @@ namespace WalletApp.AppForms
             RegistrationButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             RegistrationButton.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             AuthorizationButton.Text = "Вход";
+            LoginTextBox.Text = null;
+            PasswordTextBox.Text = null;
         }
 
         private void RegistrationButton_Click(object sender, EventArgs e)
@@ -40,6 +42,8 @@ namespace WalletApp.AppForms
             LoginButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             LoginButton.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             AuthorizationButton.Text = "Регистрация";
+            LoginTextBox.Text = null;
+            PasswordTextBox.Text = null;
         }
 
         private void AuthorizationButton_Click(object sender, EventArgs e)
@@ -116,6 +120,11 @@ namespace WalletApp.AppForms
         {
             PasswordTextBox.UseSystemPasswordChar = isPassVisible;
             isPassVisible = !isPassVisible;
+        }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

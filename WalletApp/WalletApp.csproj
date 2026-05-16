@@ -70,6 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppForms\AddTransferToGoalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppForms\AddTransferToGoalForm.Designer.cs">
+      <DependentUpon>AddTransferToGoalForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AppForms\Autorization.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,10 +88,34 @@
     <Compile Include="AppForms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AppForms\NewGoalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppForms\NewGoalForm.Designer.cs">
+      <DependentUpon>NewGoalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppForms\NewNoteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppForms\NewNoteForm.Designer.cs">
+      <DependentUpon>NewNoteForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CourseProjectDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CourseProjectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUserControl\CategoriesStatistics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomUserControl\CategoriesStatistics.Designer.cs">
+      <DependentUpon>CategoriesStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUserControl\GoalUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomUserControl\GoalUserControl.Designer.cs">
+      <DependentUpon>GoalUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomUserControl\IncomeExpensesUserControl.cs">
       <SubType>UserControl</SubType>
@@ -102,11 +132,26 @@
     <Compile Include="Models\users.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AppForms\AddTransferToGoalForm.resx">
+      <DependentUpon>AddTransferToGoalForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AppForms\Autorization.resx">
       <DependentUpon>Autorization.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AppForms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppForms\NewGoalForm.resx">
+      <DependentUpon>NewGoalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppForms\NewNoteForm.resx">
+      <DependentUpon>NewNoteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomUserControl\CategoriesStatistics.resx">
+      <DependentUpon>CategoriesStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomUserControl\GoalUserControl.resx">
+      <DependentUpon>GoalUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomUserControl\IncomeExpensesUserControl.resx">
       <DependentUpon>IncomeExpensesUserControl.cs</DependentUpon>
@@ -152,6 +197,7 @@
   <ItemGroup>
     <None Include="Resources\add_circle_create_expand_new_plus_icon_123218.png" />
     <None Include="Resources\not-visible-interface-symbol-of-an-eye-with-a-slash-on-it_icon-icons.com_57783.png" />
+    <None Include="Resources\4115230-cancel-close-cross-delete_114048.png" />
     <Content Include="wallet_payment_purchase_coin_cash_money_icon_141978.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
