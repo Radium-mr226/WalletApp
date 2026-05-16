@@ -15,16 +15,20 @@ namespace WalletApp.AppForms
     {
         private bool isSignIn = true;
         private bool isPassVisible = false;
+        private bool isPassVisible1 = false;
         public Autorization()
         {
             InitializeComponent();
             PasswordTextBox.UseSystemPasswordChar = true;
+            PasswordTextBox1.UseSystemPasswordChar = true;
         }
 
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
             isSignIn = true;
+            PasswordLabel1.Visible = false;
+            PasswordTextBox1.Visible = false;
             LoginButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             LoginButton.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             RegistrationButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
@@ -37,6 +41,8 @@ namespace WalletApp.AppForms
         private void RegistrationButton_Click(object sender, EventArgs e)
         {
             isSignIn = false;
+            PasswordLabel1.Visible = true;
+            PasswordTextBox1.Visible = true;
             RegistrationButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             RegistrationButton.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             LoginButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
@@ -52,6 +58,7 @@ namespace WalletApp.AppForms
             {
                 string username = LoginTextBox.Text;
                 string password = PasswordTextBox.Text;
+                string password1 = PasswordTextBox1.Text;
 
                 try
                 {
@@ -92,6 +99,11 @@ namespace WalletApp.AppForms
                         return; // Прерываем метод, не даем зарегистрироваться
                     }
 
+                    if (PasswordTextBox.Text != PasswordTextBox1.Text)
+                    {
+                        MessageBox.Show("Пароли не совпадают!");
+                        return; // Прерываем метод, не даем зарегистрироваться
+                    }
                     // 3. Если логин свободен — создаем нового пользователя
                     users newUser = new users();
                     
@@ -125,6 +137,12 @@ namespace WalletApp.AppForms
         private void CloseButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void PasswordTextBox1_IconRightClick(object sender, EventArgs e)
+        {
+            PasswordTextBox1.UseSystemPasswordChar = isPassVisible1;
+            isPassVisible1 = !isPassVisible1;
         }
     }
 }

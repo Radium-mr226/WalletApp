@@ -36,11 +36,13 @@ namespace WalletApp.AppForms
             this.LoginButton = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.RegistrationButton = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.AuthorizationButton = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.PasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.LoginTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.PasswordLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.CloseButton = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.PasswordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PasswordTextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.PasswordLabel1 = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.guna2CustomGradientPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -49,11 +51,13 @@ namespace WalletApp.AppForms
             // 
             this.guna2CustomGradientPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2CustomGradientPanel1.BorderRadius = 40;
+            this.guna2CustomGradientPanel1.Controls.Add(this.PasswordTextBox1);
+            this.guna2CustomGradientPanel1.Controls.Add(this.PasswordLabel1);
             this.guna2CustomGradientPanel1.Controls.Add(this.guna2CustomGradientPanel2);
             this.guna2CustomGradientPanel1.Controls.Add(this.AuthorizationButton);
             this.guna2CustomGradientPanel1.Controls.Add(this.PasswordTextBox);
             this.guna2CustomGradientPanel1.Controls.Add(this.LoginTextBox);
-            this.guna2CustomGradientPanel1.Controls.Add(this.label3);
+            this.guna2CustomGradientPanel1.Controls.Add(this.PasswordLabel);
             this.guna2CustomGradientPanel1.Controls.Add(this.label4);
             this.guna2CustomGradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(173)))), ((int)(((byte)(255)))));
             this.guna2CustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(173)))), ((int)(((byte)(255)))));
@@ -76,7 +80,7 @@ namespace WalletApp.AppForms
             this.guna2CustomGradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.guna2CustomGradientPanel2.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.guna2CustomGradientPanel2.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(68, 80);
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(68, 55);
             this.guna2CustomGradientPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(315, 66);
@@ -152,6 +156,33 @@ namespace WalletApp.AppForms
             this.AuthorizationButton.UseTransparentBackground = true;
             this.AuthorizationButton.Click += new System.EventHandler(this.AuthorizationButton_Click);
             // 
+            // PasswordTextBox
+            // 
+            this.PasswordTextBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.PasswordTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.PasswordTextBox.BorderRadius = 15;
+            this.PasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PasswordTextBox.DefaultText = "123";
+            this.PasswordTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PasswordTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PasswordTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTextBox.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.PasswordTextBox.ForeColor = System.Drawing.Color.Black;
+            this.PasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTextBox.IconRight = global::WalletApp.Properties.Resources.not_visible_interface_symbol_of_an_eye_with_a_slash_on_it_icon_icons_com_57783;
+            this.PasswordTextBox.IconRightOffset = new System.Drawing.Point(10, 0);
+            this.PasswordTextBox.Location = new System.Drawing.Point(68, 316);
+            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.PasswordTextBox.Name = "PasswordTextBox";
+            this.PasswordTextBox.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.PasswordTextBox.PlaceholderText = "";
+            this.PasswordTextBox.SelectedText = "";
+            this.PasswordTextBox.Size = new System.Drawing.Size(315, 59);
+            this.PasswordTextBox.TabIndex = 10;
+            this.PasswordTextBox.IconRightClick += new System.EventHandler(this.PasswordTextBox_IconRightClick);
+            // 
             // LoginTextBox
             // 
             this.LoginTextBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -167,7 +198,7 @@ namespace WalletApp.AppForms
             this.LoginTextBox.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.LoginTextBox.ForeColor = System.Drawing.Color.Black;
             this.LoginTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.LoginTextBox.Location = new System.Drawing.Point(68, 212);
+            this.LoginTextBox.Location = new System.Drawing.Point(68, 187);
             this.LoginTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.LoginTextBox.Name = "LoginTextBox";
             this.LoginTextBox.PlaceholderForeColor = System.Drawing.Color.Black;
@@ -176,18 +207,18 @@ namespace WalletApp.AppForms
             this.LoginTextBox.Size = new System.Drawing.Size(315, 59);
             this.LoginTextBox.TabIndex = 9;
             // 
-            // label3
+            // PasswordLabel
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(171, 298);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 31);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Пароль";
+            this.PasswordLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.PasswordLabel.AutoSize = true;
+            this.PasswordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.PasswordLabel.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PasswordLabel.Location = new System.Drawing.Point(171, 273);
+            this.PasswordLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PasswordLabel.Name = "PasswordLabel";
+            this.PasswordLabel.Size = new System.Drawing.Size(99, 31);
+            this.PasswordLabel.TabIndex = 8;
+            this.PasswordLabel.Text = "Пароль";
             // 
             // label4
             // 
@@ -195,7 +226,7 @@ namespace WalletApp.AppForms
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(179, 169);
+            this.label4.Location = new System.Drawing.Point(179, 144);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 31);
@@ -223,32 +254,47 @@ namespace WalletApp.AppForms
             this.CloseButton.TabIndex = 3;
             this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
-            // PasswordTextBox
+            // PasswordTextBox1
             // 
-            this.PasswordTextBox.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.PasswordTextBox.BackColor = System.Drawing.Color.Transparent;
-            this.PasswordTextBox.BorderRadius = 15;
-            this.PasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.PasswordTextBox.DefaultText = "123";
-            this.PasswordTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.PasswordTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.PasswordTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PasswordTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PasswordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PasswordTextBox.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.PasswordTextBox.ForeColor = System.Drawing.Color.Black;
-            this.PasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PasswordTextBox.IconRight = global::WalletApp.Properties.Resources.not_visible_interface_symbol_of_an_eye_with_a_slash_on_it_icon_icons_com_57783;
-            this.PasswordTextBox.IconRightOffset = new System.Drawing.Point(10, 0);
-            this.PasswordTextBox.Location = new System.Drawing.Point(68, 341);
-            this.PasswordTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.PasswordTextBox.Name = "PasswordTextBox";
-            this.PasswordTextBox.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.PasswordTextBox.PlaceholderText = "";
-            this.PasswordTextBox.SelectedText = "";
-            this.PasswordTextBox.Size = new System.Drawing.Size(315, 59);
-            this.PasswordTextBox.TabIndex = 10;
-            this.PasswordTextBox.IconRightClick += new System.EventHandler(this.PasswordTextBox_IconRightClick);
+            this.PasswordTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.PasswordTextBox1.BackColor = System.Drawing.Color.Transparent;
+            this.PasswordTextBox1.BorderRadius = 15;
+            this.PasswordTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PasswordTextBox1.DefaultText = "123";
+            this.PasswordTextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PasswordTextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PasswordTextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PasswordTextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.PasswordTextBox1.ForeColor = System.Drawing.Color.Black;
+            this.PasswordTextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PasswordTextBox1.IconRight = global::WalletApp.Properties.Resources.not_visible_interface_symbol_of_an_eye_with_a_slash_on_it_icon_icons_com_57783;
+            this.PasswordTextBox1.IconRightOffset = new System.Drawing.Point(10, 0);
+            this.PasswordTextBox1.Location = new System.Drawing.Point(68, 432);
+            this.PasswordTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.PasswordTextBox1.Name = "PasswordTextBox1";
+            this.PasswordTextBox1.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.PasswordTextBox1.PlaceholderText = "";
+            this.PasswordTextBox1.SelectedText = "";
+            this.PasswordTextBox1.Size = new System.Drawing.Size(315, 59);
+            this.PasswordTextBox1.TabIndex = 17;
+            this.PasswordTextBox1.Visible = false;
+            this.PasswordTextBox1.IconRightClick += new System.EventHandler(this.PasswordTextBox1_IconRightClick);
+            // 
+            // PasswordLabel1
+            // 
+            this.PasswordLabel1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.PasswordLabel1.AutoSize = true;
+            this.PasswordLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.PasswordLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PasswordLabel1.Location = new System.Drawing.Point(93, 396);
+            this.PasswordLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PasswordLabel1.Name = "PasswordLabel1";
+            this.PasswordLabel1.Size = new System.Drawing.Size(265, 31);
+            this.PasswordLabel1.TabIndex = 16;
+            this.PasswordLabel1.Text = "Подтвердите пароль";
+            this.PasswordLabel1.Visible = false;
             // 
             // Autorization
             // 
@@ -277,10 +323,12 @@ namespace WalletApp.AppForms
         private Guna.UI2.WinForms.Guna2GradientButton AuthorizationButton;
         private Guna.UI2.WinForms.Guna2TextBox PasswordTextBox;
         private Guna.UI2.WinForms.Guna2TextBox LoginTextBox;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label PasswordLabel;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
         private Guna.UI2.WinForms.Guna2GradientTileButton RegistrationButton;
         private Guna.UI2.WinForms.Guna2GradientButton CloseButton;
+        private Guna.UI2.WinForms.Guna2TextBox PasswordTextBox1;
+        private System.Windows.Forms.Label PasswordLabel1;
     }
 }

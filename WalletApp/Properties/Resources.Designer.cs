@@ -63,6 +63,16 @@ namespace WalletApp.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1904675_configuration_edit_gear_options_preferences_setting_settings_122525 {
+            get {
+                object obj = ResourceManager.GetObject("1904675-configuration-edit-gear-options-preferences-setting-settings_122525", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4115230_cancel_close_cross_delete_114048 {
             get {
                 object obj = ResourceManager.GetObject("4115230-cancel-close-cross-delete_114048", resourceCulture);

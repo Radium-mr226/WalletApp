@@ -534,6 +534,11 @@ namespace WalletApp.AppForms
             }
         }
 
+        private void settingsPictureBox_Click(object sender, EventArgs e)
+        {
+            SettingsForm settingsForm = new SettingsForm(_user);
+            settingsForm.ShowDialog();
+        }
 
 
         private void AddBudgetTextBox_KeyPress(object sender, KeyPressEventArgs e)
@@ -602,7 +607,6 @@ namespace WalletApp.AppForms
             e.Handled = true;
         }
 
-        
     }
 
 }

@@ -45,7 +45,6 @@
             this.NewNoteMainPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.NewNoteDescriptionMainLabel = new System.Windows.Forms.Label();
             this.NewNoteMainLabel = new System.Windows.Forms.Label();
-            this.NewNoteMainPoctireBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.InfoPlusMinusBudgetMainPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.MinusMainPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.MinusMainLabel = new System.Windows.Forms.Label();
@@ -76,11 +75,9 @@
             this.AddTransferToGoalPanel4 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2CustomGradientPanel10 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.BudgetPage = new System.Windows.Forms.TabPage();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
@@ -106,6 +103,15 @@
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.WarningStatLabel = new System.Windows.Forms.Label();
             this.WarningGoalsLabel = new System.Windows.Forms.Label();
+            this.CategotyTitleChart = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.NewNoteMainPoctireBox = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.SettingsPictureBoxMain = new System.Windows.Forms.PictureBox();
+            this.settingsPictureBoxStat = new System.Windows.Forms.PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.SettingsPictureBoxGoals = new System.Windows.Forms.PictureBox();
+            this.SettingsPictureBoxBudget = new System.Windows.Forms.PictureBox();
             this.guna2TabControl1.SuspendLayout();
             this.MainPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -114,7 +120,6 @@
             this.splitContainer1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.NewNoteMainPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NewNoteMainPoctireBox)).BeginInit();
             this.InfoPlusMinusBudgetMainPanel.SuspendLayout();
             this.MinusMainPanel.SuspendLayout();
             this.PlusMainPanel.SuspendLayout();
@@ -141,9 +146,7 @@
             this.splitContainer3.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
             this.AddTransferToGoalPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2CustomGradientPanel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.BudgetPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
             this.splitContainer4.Panel1.SuspendLayout();
@@ -156,6 +159,13 @@
             this.guna2CustomGradientPanel1.SuspendLayout();
             this.CategotyFlowLayoutPanel.SuspendLayout();
             this.flowLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NewNoteMainPoctireBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxMain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.settingsPictureBoxStat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxGoals)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxBudget)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2TabControl1
@@ -215,6 +225,10 @@
             this.splitContainer1.Panel1.Controls.Add(this.flowLayoutPanel1);
             this.splitContainer1.Panel1.Controls.Add(this.WarningMainLabel);
             this.splitContainer1.Panel1.Padding = new System.Windows.Forms.Padding(20);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.SettingsPictureBoxMain);
             this.splitContainer1.Size = new System.Drawing.Size(1298, 943);
             this.splitContainer1.SplitterDistance = 1056;
             this.splitContainer1.TabIndex = 0;
@@ -266,22 +280,6 @@
             this.NewNoteMainLabel.TabIndex = 1;
             this.NewNoteMainLabel.Text = "Добавить запись";
             this.NewNoteMainLabel.Click += new System.EventHandler(this.NewNoteMainLabel_Click);
-            // 
-            // NewNoteMainPoctireBox
-            // 
-            this.NewNoteMainPoctireBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.NewNoteMainPoctireBox.BackColor = System.Drawing.Color.Transparent;
-            this.NewNoteMainPoctireBox.BorderRadius = 15;
-            this.NewNoteMainPoctireBox.FillColor = System.Drawing.Color.CornflowerBlue;
-            this.NewNoteMainPoctireBox.Image = global::WalletApp.Properties.Resources.add_circle_create_expand_new_plus_icon_123218;
-            this.NewNoteMainPoctireBox.ImageRotate = 0F;
-            this.NewNoteMainPoctireBox.Location = new System.Drawing.Point(26, 27);
-            this.NewNoteMainPoctireBox.Name = "NewNoteMainPoctireBox";
-            this.NewNoteMainPoctireBox.Size = new System.Drawing.Size(150, 150);
-            this.NewNoteMainPoctireBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.NewNoteMainPoctireBox.TabIndex = 0;
-            this.NewNoteMainPoctireBox.TabStop = false;
-            this.NewNoteMainPoctireBox.Click += new System.EventHandler(this.NewNoteMainLabel_Click);
             // 
             // InfoPlusMinusBudgetMainPanel
             // 
@@ -398,6 +396,7 @@
             // 
             this.ChartSpentsMainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.ChartSpentsMainPanel.BorderRadius = 30;
+            this.ChartSpentsMainPanel.Controls.Add(this.CategotyTitleChart);
             this.ChartSpentsMainPanel.Controls.Add(this.flowLayoutPanel4);
             this.ChartSpentsMainPanel.Controls.Add(this.ChartCenterLabel);
             this.ChartSpentsMainPanel.Controls.Add(this.MainChartCategories);
@@ -471,6 +470,10 @@
             this.splitContainer2.Panel1.Controls.Add(this.flowLayoutPanel2);
             this.splitContainer2.Panel1.Controls.Add(this.WarningStatLabel);
             this.splitContainer2.Panel1.Padding = new System.Windows.Forms.Padding(20);
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.Controls.Add(this.settingsPictureBoxStat);
             this.splitContainer2.Size = new System.Drawing.Size(1298, 943);
             this.splitContainer2.SplitterDistance = 1056;
             this.splitContainer2.TabIndex = 1;
@@ -492,6 +495,7 @@
             // 
             this.guna2CustomGradientPanel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CustomGradientPanel8.BorderRadius = 30;
+            this.guna2CustomGradientPanel8.Controls.Add(this.label1);
             this.guna2CustomGradientPanel8.Controls.Add(this.CategotyFlowLayoutPanel);
             this.guna2CustomGradientPanel8.Controls.Add(this.CategoriesChart);
             this.guna2CustomGradientPanel8.Location = new System.Drawing.Point(3, 3);
@@ -617,6 +621,10 @@
             this.splitContainer3.Panel1.Controls.Add(this.flowLayoutPanel3);
             this.splitContainer3.Panel1.Controls.Add(this.WarningGoalsLabel);
             this.splitContainer3.Panel1.Padding = new System.Windows.Forms.Padding(20);
+            // 
+            // splitContainer3.Panel2
+            // 
+            this.splitContainer3.Panel2.Controls.Add(this.SettingsPictureBoxGoals);
             this.splitContainer3.Size = new System.Drawing.Size(1298, 943);
             this.splitContainer3.SplitterDistance = 1056;
             this.splitContainer3.TabIndex = 2;
@@ -668,22 +676,6 @@
             this.label15.Text = "Добавить денег в копилку";
             this.label15.Click += new System.EventHandler(this.guna2CustomGradientPanel4_Click);
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.BorderRadius = 15;
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.CornflowerBlue;
-            this.guna2PictureBox1.Image = global::WalletApp.Properties.Resources.add_circle_create_expand_new_plus_icon_123218;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(26, 27);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(150, 150);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2CustomGradientPanel4_Click);
-            // 
             // guna2CustomGradientPanel10
             // 
             this.guna2CustomGradientPanel10.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -719,22 +711,6 @@
             this.label17.Text = "Добавить новую цель ";
             this.label17.Click += new System.EventHandler(this.guna2PictureBox2_Click);
             // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.BorderRadius = 15;
-            this.guna2PictureBox2.FillColor = System.Drawing.Color.CornflowerBlue;
-            this.guna2PictureBox2.Image = global::WalletApp.Properties.Resources.add_circle_create_expand_new_plus_icon_123218;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(26, 27);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(150, 150);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox2.TabIndex = 0;
-            this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click);
-            // 
             // BudgetPage
             // 
             this.BudgetPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
@@ -759,6 +735,10 @@
             this.splitContainer4.Panel1.AutoScroll = true;
             this.splitContainer4.Panel1.Controls.Add(this.flowLayoutPanel5);
             this.splitContainer4.Panel1.Padding = new System.Windows.Forms.Padding(20);
+            // 
+            // splitContainer4.Panel2
+            // 
+            this.splitContainer4.Panel2.Controls.Add(this.SettingsPictureBoxBudget);
             this.splitContainer4.Size = new System.Drawing.Size(1298, 943);
             this.splitContainer4.SplitterDistance = 1056;
             this.splitContainer4.TabIndex = 2;
@@ -1028,9 +1008,9 @@
             this.CategotyFlowLayoutPanel.BackColor = System.Drawing.Color.Transparent;
             this.CategotyFlowLayoutPanel.Controls.Add(this.tableLayoutPanelCategoriesStatistics);
             this.CategotyFlowLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.CategotyFlowLayoutPanel.Location = new System.Drawing.Point(23, 23);
+            this.CategotyFlowLayoutPanel.Location = new System.Drawing.Point(23, 53);
             this.CategotyFlowLayoutPanel.Name = "CategotyFlowLayoutPanel";
-            this.CategotyFlowLayoutPanel.Size = new System.Drawing.Size(395, 506);
+            this.CategotyFlowLayoutPanel.Size = new System.Drawing.Size(395, 476);
             this.CategotyFlowLayoutPanel.TabIndex = 12;
             // 
             // flowLayoutPanel4
@@ -1039,9 +1019,9 @@
             this.flowLayoutPanel4.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel4.Controls.Add(this.tableLayoutPanelCategories);
             this.flowLayoutPanel4.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(23, 23);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(23, 53);
             this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(395, 506);
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(395, 476);
             this.flowLayoutPanel4.TabIndex = 15;
             // 
             // WarningStatLabel
@@ -1067,6 +1047,118 @@
             this.WarningGoalsLabel.TabIndex = 2;
             this.WarningGoalsLabel.Text = "Для начала необходимо добавить новый бюджет";
             this.WarningGoalsLabel.Visible = false;
+            // 
+            // CategotyTitleChart
+            // 
+            this.CategotyTitleChart.AutoSize = true;
+            this.CategotyTitleChart.BackColor = System.Drawing.Color.Transparent;
+            this.CategotyTitleChart.Location = new System.Drawing.Point(335, 11);
+            this.CategotyTitleChart.Name = "CategotyTitleChart";
+            this.CategotyTitleChart.Size = new System.Drawing.Size(299, 31);
+            this.CategotyTitleChart.TabIndex = 16;
+            this.CategotyTitleChart.Text = "Статистика по категориям";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(312, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(299, 31);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Статистика по категориям";
+            // 
+            // NewNoteMainPoctireBox
+            // 
+            this.NewNoteMainPoctireBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.NewNoteMainPoctireBox.BackColor = System.Drawing.Color.Transparent;
+            this.NewNoteMainPoctireBox.BorderRadius = 15;
+            this.NewNoteMainPoctireBox.FillColor = System.Drawing.Color.CornflowerBlue;
+            this.NewNoteMainPoctireBox.Image = global::WalletApp.Properties.Resources.add_circle_create_expand_new_plus_icon_123218;
+            this.NewNoteMainPoctireBox.ImageRotate = 0F;
+            this.NewNoteMainPoctireBox.Location = new System.Drawing.Point(26, 27);
+            this.NewNoteMainPoctireBox.Name = "NewNoteMainPoctireBox";
+            this.NewNoteMainPoctireBox.Size = new System.Drawing.Size(150, 150);
+            this.NewNoteMainPoctireBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.NewNoteMainPoctireBox.TabIndex = 0;
+            this.NewNoteMainPoctireBox.TabStop = false;
+            this.NewNoteMainPoctireBox.Click += new System.EventHandler(this.NewNoteMainLabel_Click);
+            // 
+            // SettingsPictureBoxMain
+            // 
+            this.SettingsPictureBoxMain.Image = global::WalletApp.Properties.Resources._1904675_configuration_edit_gear_options_preferences_setting_settings_122525;
+            this.SettingsPictureBoxMain.Location = new System.Drawing.Point(173, 5);
+            this.SettingsPictureBoxMain.Name = "SettingsPictureBoxMain";
+            this.SettingsPictureBoxMain.Size = new System.Drawing.Size(60, 60);
+            this.SettingsPictureBoxMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SettingsPictureBoxMain.TabIndex = 1;
+            this.SettingsPictureBoxMain.TabStop = false;
+            this.SettingsPictureBoxMain.Click += new System.EventHandler(this.settingsPictureBox_Click);
+            // 
+            // settingsPictureBoxStat
+            // 
+            this.settingsPictureBoxStat.Image = global::WalletApp.Properties.Resources._1904675_configuration_edit_gear_options_preferences_setting_settings_122525;
+            this.settingsPictureBoxStat.Location = new System.Drawing.Point(173, 5);
+            this.settingsPictureBoxStat.Name = "settingsPictureBoxStat";
+            this.settingsPictureBoxStat.Size = new System.Drawing.Size(60, 60);
+            this.settingsPictureBoxStat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.settingsPictureBoxStat.TabIndex = 0;
+            this.settingsPictureBoxStat.TabStop = false;
+            this.settingsPictureBoxStat.Click += new System.EventHandler(this.settingsPictureBox_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.BorderRadius = 15;
+            this.guna2PictureBox1.FillColor = System.Drawing.Color.CornflowerBlue;
+            this.guna2PictureBox1.Image = global::WalletApp.Properties.Resources.add_circle_create_expand_new_plus_icon_123218;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(26, 27);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(150, 150);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2CustomGradientPanel4_Click);
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.BorderRadius = 15;
+            this.guna2PictureBox2.FillColor = System.Drawing.Color.CornflowerBlue;
+            this.guna2PictureBox2.Image = global::WalletApp.Properties.Resources.add_circle_create_expand_new_plus_icon_123218;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(26, 27);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(150, 150);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 0;
+            this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click);
+            // 
+            // SettingsPictureBoxGoals
+            // 
+            this.SettingsPictureBoxGoals.Image = global::WalletApp.Properties.Resources._1904675_configuration_edit_gear_options_preferences_setting_settings_122525;
+            this.SettingsPictureBoxGoals.Location = new System.Drawing.Point(173, 5);
+            this.SettingsPictureBoxGoals.Name = "SettingsPictureBoxGoals";
+            this.SettingsPictureBoxGoals.Size = new System.Drawing.Size(60, 60);
+            this.SettingsPictureBoxGoals.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SettingsPictureBoxGoals.TabIndex = 1;
+            this.SettingsPictureBoxGoals.TabStop = false;
+            this.SettingsPictureBoxGoals.Click += new System.EventHandler(this.settingsPictureBox_Click);
+            // 
+            // SettingsPictureBoxBudget
+            // 
+            this.SettingsPictureBoxBudget.Image = global::WalletApp.Properties.Resources._1904675_configuration_edit_gear_options_preferences_setting_settings_122525;
+            this.SettingsPictureBoxBudget.Location = new System.Drawing.Point(175, 5);
+            this.SettingsPictureBoxBudget.Name = "SettingsPictureBoxBudget";
+            this.SettingsPictureBoxBudget.Size = new System.Drawing.Size(60, 60);
+            this.SettingsPictureBoxBudget.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SettingsPictureBoxBudget.TabIndex = 1;
+            this.SettingsPictureBoxBudget.TabStop = false;
+            this.SettingsPictureBoxBudget.Click += new System.EventHandler(this.settingsPictureBox_Click);
             // 
             // MainForm
             // 
@@ -1095,13 +1187,13 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.NewNoteMainPanel.ResumeLayout(false);
             this.NewNoteMainPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NewNoteMainPoctireBox)).EndInit();
             this.InfoPlusMinusBudgetMainPanel.ResumeLayout(false);
             this.MinusMainPanel.ResumeLayout(false);
             this.PlusMainPanel.ResumeLayout(false);
             this.BudgetMainPanel.ResumeLayout(false);
             this.DayLeftMoneyMainPanel.ResumeLayout(false);
             this.ChartSpentsMainPanel.ResumeLayout(false);
+            this.ChartSpentsMainPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainChartCategories)).EndInit();
             this.statisticsPage.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
@@ -1110,6 +1202,7 @@
             this.splitContainer2.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.guna2CustomGradientPanel8.ResumeLayout(false);
+            this.guna2CustomGradientPanel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CategoriesChart)).EndInit();
             this.guna2CustomGradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AllTransactionCatChart)).EndInit();
@@ -1123,10 +1216,8 @@
             this.flowLayoutPanel3.ResumeLayout(false);
             this.AddTransferToGoalPanel4.ResumeLayout(false);
             this.AddTransferToGoalPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2CustomGradientPanel10.ResumeLayout(false);
             this.guna2CustomGradientPanel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.BudgetPage.ResumeLayout(false);
             this.splitContainer4.Panel1.ResumeLayout(false);
             this.splitContainer4.Panel2.ResumeLayout(false);
@@ -1143,6 +1234,13 @@
             this.CategotyFlowLayoutPanel.PerformLayout();
             this.flowLayoutPanel4.ResumeLayout(false);
             this.flowLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NewNoteMainPoctireBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxMain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.settingsPictureBoxStat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxGoals)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxBudget)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1216,5 +1314,11 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.Label WarningStatLabel;
         private System.Windows.Forms.Label WarningGoalsLabel;
+        private System.Windows.Forms.PictureBox settingsPictureBoxStat;
+        private System.Windows.Forms.Label CategotyTitleChart;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox SettingsPictureBoxMain;
+        private System.Windows.Forms.PictureBox SettingsPictureBoxGoals;
+        private System.Windows.Forms.PictureBox SettingsPictureBoxBudget;
     }
 }
