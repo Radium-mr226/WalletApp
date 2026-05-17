@@ -65,6 +65,7 @@ namespace WalletApp.AppForms
 
         private void SettingsForm_Load(object sender, EventArgs e)
         {
+            PasswordTextBox.UseSystemPasswordChar = true;
             LoginTextBox.Text = _user.user_login;
             PasswordTextBox.Text = _user.password_hash;
         }

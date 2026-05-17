@@ -47,14 +47,12 @@
             this.NewNoteMainLabel = new System.Windows.Forms.Label();
             this.InfoPlusMinusBudgetMainPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.MinusMainPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.MinusMainLabel = new System.Windows.Forms.Label();
             this.PlusMainPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.PlusMainLabel = new System.Windows.Forms.Label();
-            this.BudgetMainPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.BudgetMainLabel = new System.Windows.Forms.Label();
             this.DayLeftMoneyMainPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.DayLeftMoneyMainLabel = new System.Windows.Forms.Label();
             this.ChartSpentsMainPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.CategotyTitleChart = new System.Windows.Forms.Label();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanelCategories = new System.Windows.Forms.TableLayoutPanel();
             this.ChartCenterLabel = new System.Windows.Forms.Label();
             this.MainChartCategories = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.WarningMainLabel = new System.Windows.Forms.Label();
@@ -62,6 +60,9 @@
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2CustomGradientPanel8 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.CategotyFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanelCategoriesStatistics = new System.Windows.Forms.TableLayoutPanel();
             this.CategoriesChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.AllTransactionCatChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -69,6 +70,7 @@
             this.ExStatfFowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.IncomesGradientPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.IncomeStatfFowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.WarningStatLabel = new System.Windows.Forms.Label();
             this.GoalsPage = new System.Windows.Forms.TabPage();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
@@ -78,6 +80,7 @@
             this.guna2CustomGradientPanel10 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.WarningGoalsLabel = new System.Windows.Forms.Label();
             this.BudgetPage = new System.Windows.Forms.TabPage();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
@@ -97,14 +100,6 @@
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.LogOutButton = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.tableLayoutPanelCategories = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanelCategoriesStatistics = new System.Windows.Forms.TableLayoutPanel();
-            this.CategotyFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.WarningStatLabel = new System.Windows.Forms.Label();
-            this.WarningGoalsLabel = new System.Windows.Forms.Label();
-            this.CategotyTitleChart = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.NewNoteMainPoctireBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.SettingsPictureBoxMain = new System.Windows.Forms.PictureBox();
             this.settingsPictureBoxStat = new System.Windows.Forms.PictureBox();
@@ -112,6 +107,22 @@
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.SettingsPictureBoxGoals = new System.Windows.Forms.PictureBox();
             this.SettingsPictureBoxBudget = new System.Windows.Forms.PictureBox();
+            this.BudgetMainPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.PlusMainLabel = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.MinusMainLabel = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.BudgetMainLabel = new System.Windows.Forms.Label();
+            this.DayLeftMoneyMainLabel = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2TabControl1.SuspendLayout();
             this.MainPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -123,9 +134,9 @@
             this.InfoPlusMinusBudgetMainPanel.SuspendLayout();
             this.MinusMainPanel.SuspendLayout();
             this.PlusMainPanel.SuspendLayout();
-            this.BudgetMainPanel.SuspendLayout();
             this.DayLeftMoneyMainPanel.SuspendLayout();
             this.ChartSpentsMainPanel.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainChartCategories)).BeginInit();
             this.statisticsPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
@@ -134,6 +145,7 @@
             this.splitContainer2.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.guna2CustomGradientPanel8.SuspendLayout();
+            this.CategotyFlowLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CategoriesChart)).BeginInit();
             this.guna2CustomGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AllTransactionCatChart)).BeginInit();
@@ -157,8 +169,6 @@
             this.guna2CustomGradientPanel7.SuspendLayout();
             this.guna2CustomGradientPanel9.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
-            this.CategotyFlowLayoutPanel.SuspendLayout();
-            this.flowLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NewNoteMainPoctireBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.settingsPictureBoxStat)).BeginInit();
@@ -166,6 +176,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxGoals)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxBudget)).BeginInit();
+            this.BudgetMainPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2TabControl1
@@ -230,7 +245,7 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.SettingsPictureBoxMain);
             this.splitContainer1.Size = new System.Drawing.Size(1298, 943);
-            this.splitContainer1.SplitterDistance = 1056;
+            this.splitContainer1.SplitterDistance = 1219;
             this.splitContainer1.TabIndex = 0;
             // 
             // flowLayoutPanel1
@@ -243,19 +258,21 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(20, 20);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1016, 903);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1179, 903);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // NewNoteMainPanel
             // 
             this.NewNoteMainPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.NewNoteMainPanel.AutoSize = true;
             this.NewNoteMainPanel.BorderRadius = 30;
             this.NewNoteMainPanel.Controls.Add(this.NewNoteDescriptionMainLabel);
             this.NewNoteMainPanel.Controls.Add(this.NewNoteMainLabel);
             this.NewNoteMainPanel.Controls.Add(this.NewNoteMainPoctireBox);
             this.NewNoteMainPanel.Location = new System.Drawing.Point(3, 3);
             this.NewNoteMainPanel.Name = "NewNoteMainPanel";
-            this.NewNoteMainPanel.Size = new System.Drawing.Size(953, 200);
+            this.NewNoteMainPanel.Padding = new System.Windows.Forms.Padding(20);
+            this.NewNoteMainPanel.Size = new System.Drawing.Size(1140, 199);
             this.NewNoteMainPanel.TabIndex = 6;
             this.NewNoteMainPanel.Click += new System.EventHandler(this.NewNoteMainLabel_Click);
             // 
@@ -264,7 +281,7 @@
             this.NewNoteDescriptionMainLabel.BackColor = System.Drawing.Color.Transparent;
             this.NewNoteDescriptionMainLabel.Location = new System.Drawing.Point(202, 89);
             this.NewNoteDescriptionMainLabel.Name = "NewNoteDescriptionMainLabel";
-            this.NewNoteDescriptionMainLabel.Size = new System.Drawing.Size(726, 72);
+            this.NewNoteDescriptionMainLabel.Size = new System.Drawing.Size(915, 72);
             this.NewNoteDescriptionMainLabel.TabIndex = 2;
             this.NewNoteDescriptionMainLabel.Text = "Добавьте запись о ваших ваших финансовых решениях, будь то доходы или траты";
             this.NewNoteDescriptionMainLabel.Click += new System.EventHandler(this.NewNoteMainLabel_Click);
@@ -274,7 +291,7 @@
             this.NewNoteMainLabel.AutoSize = true;
             this.NewNoteMainLabel.BackColor = System.Drawing.Color.Transparent;
             this.NewNoteMainLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NewNoteMainLabel.Location = new System.Drawing.Point(202, 34);
+            this.NewNoteMainLabel.Location = new System.Drawing.Point(200, 41);
             this.NewNoteMainLabel.Name = "NewNoteMainLabel";
             this.NewNoteMainLabel.Size = new System.Drawing.Size(284, 45);
             this.NewNoteMainLabel.TabIndex = 1;
@@ -288,109 +305,58 @@
             this.InfoPlusMinusBudgetMainPanel.Controls.Add(this.MinusMainPanel);
             this.InfoPlusMinusBudgetMainPanel.Controls.Add(this.PlusMainPanel);
             this.InfoPlusMinusBudgetMainPanel.Controls.Add(this.BudgetMainPanel);
-            this.InfoPlusMinusBudgetMainPanel.Location = new System.Drawing.Point(3, 209);
+            this.InfoPlusMinusBudgetMainPanel.FillColor = System.Drawing.Color.Transparent;
+            this.InfoPlusMinusBudgetMainPanel.FillColor2 = System.Drawing.Color.Transparent;
+            this.InfoPlusMinusBudgetMainPanel.FillColor3 = System.Drawing.Color.Transparent;
+            this.InfoPlusMinusBudgetMainPanel.FillColor4 = System.Drawing.Color.Transparent;
+            this.InfoPlusMinusBudgetMainPanel.Location = new System.Drawing.Point(3, 208);
             this.InfoPlusMinusBudgetMainPanel.Name = "InfoPlusMinusBudgetMainPanel";
             this.InfoPlusMinusBudgetMainPanel.Padding = new System.Windows.Forms.Padding(20);
-            this.InfoPlusMinusBudgetMainPanel.Size = new System.Drawing.Size(953, 200);
+            this.InfoPlusMinusBudgetMainPanel.Size = new System.Drawing.Size(1140, 200);
             this.InfoPlusMinusBudgetMainPanel.TabIndex = 7;
             // 
             // MinusMainPanel
             // 
             this.MinusMainPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MinusMainPanel.BackColor = System.Drawing.Color.Transparent;
-            this.MinusMainPanel.BorderRadius = 15;
+            this.MinusMainPanel.BorderRadius = 30;
+            this.MinusMainPanel.Controls.Add(this.label7);
+            this.MinusMainPanel.Controls.Add(this.guna2PictureBox8);
+            this.MinusMainPanel.Controls.Add(this.label8);
             this.MinusMainPanel.Controls.Add(this.MinusMainLabel);
-            this.MinusMainPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.MinusMainPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.MinusMainPanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.MinusMainPanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            this.MinusMainPanel.Location = new System.Drawing.Point(329, 23);
+            this.MinusMainPanel.Location = new System.Drawing.Point(386, 0);
             this.MinusMainPanel.Name = "MinusMainPanel";
             this.MinusMainPanel.Padding = new System.Windows.Forms.Padding(20);
-            this.MinusMainPanel.Size = new System.Drawing.Size(296, 152);
+            this.MinusMainPanel.Size = new System.Drawing.Size(370, 200);
             this.MinusMainPanel.TabIndex = 4;
-            // 
-            // MinusMainLabel
-            // 
-            this.MinusMainLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.MinusMainLabel.Location = new System.Drawing.Point(23, 20);
-            this.MinusMainLabel.Name = "MinusMainLabel";
-            this.MinusMainLabel.Size = new System.Drawing.Size(250, 112);
-            this.MinusMainLabel.TabIndex = 1;
-            this.MinusMainLabel.Text = "Расходы";
             // 
             // PlusMainPanel
             // 
             this.PlusMainPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.PlusMainPanel.BackColor = System.Drawing.Color.Transparent;
-            this.PlusMainPanel.BorderRadius = 15;
-            this.PlusMainPanel.Controls.Add(this.PlusMainLabel);
-            this.PlusMainPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(255)))), ((int)(((byte)(132)))));
-            this.PlusMainPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(255)))), ((int)(((byte)(132)))));
-            this.PlusMainPanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(255)))), ((int)(((byte)(132)))));
-            this.PlusMainPanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(255)))), ((int)(((byte)(132)))));
-            this.PlusMainPanel.Location = new System.Drawing.Point(632, 23);
+            this.PlusMainPanel.BorderRadius = 30;
+            this.PlusMainPanel.Controls.Add(this.label9);
+            this.PlusMainPanel.Controls.Add(this.guna2PictureBox9);
+            this.PlusMainPanel.Controls.Add(this.label18);
+            this.PlusMainPanel.Controls.Add(this.BudgetMainLabel);
+            this.PlusMainPanel.Location = new System.Drawing.Point(769, 0);
             this.PlusMainPanel.Name = "PlusMainPanel";
             this.PlusMainPanel.Padding = new System.Windows.Forms.Padding(20);
-            this.PlusMainPanel.Size = new System.Drawing.Size(296, 152);
+            this.PlusMainPanel.Size = new System.Drawing.Size(370, 200);
             this.PlusMainPanel.TabIndex = 4;
-            // 
-            // PlusMainLabel
-            // 
-            this.PlusMainLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PlusMainLabel.Location = new System.Drawing.Point(23, 20);
-            this.PlusMainLabel.Name = "PlusMainLabel";
-            this.PlusMainLabel.Size = new System.Drawing.Size(250, 112);
-            this.PlusMainLabel.TabIndex = 1;
-            this.PlusMainLabel.Text = "Доходы";
-            // 
-            // BudgetMainPanel
-            // 
-            this.BudgetMainPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BudgetMainPanel.BackColor = System.Drawing.Color.Transparent;
-            this.BudgetMainPanel.BorderRadius = 15;
-            this.BudgetMainPanel.Controls.Add(this.BudgetMainLabel);
-            this.BudgetMainPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(145)))), ((int)(((byte)(228)))));
-            this.BudgetMainPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(145)))), ((int)(((byte)(228)))));
-            this.BudgetMainPanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(145)))), ((int)(((byte)(228)))));
-            this.BudgetMainPanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(145)))), ((int)(((byte)(228)))));
-            this.BudgetMainPanel.Location = new System.Drawing.Point(26, 25);
-            this.BudgetMainPanel.Name = "BudgetMainPanel";
-            this.BudgetMainPanel.Padding = new System.Windows.Forms.Padding(20);
-            this.BudgetMainPanel.Size = new System.Drawing.Size(296, 152);
-            this.BudgetMainPanel.TabIndex = 3;
-            // 
-            // BudgetMainLabel
-            // 
-            this.BudgetMainLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BudgetMainLabel.Location = new System.Drawing.Point(23, 20);
-            this.BudgetMainLabel.Name = "BudgetMainLabel";
-            this.BudgetMainLabel.Size = new System.Drawing.Size(250, 112);
-            this.BudgetMainLabel.TabIndex = 1;
-            this.BudgetMainLabel.Text = "Бюджет";
             // 
             // DayLeftMoneyMainPanel
             // 
             this.DayLeftMoneyMainPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.DayLeftMoneyMainPanel.BorderRadius = 30;
             this.DayLeftMoneyMainPanel.Controls.Add(this.DayLeftMoneyMainLabel);
-            this.DayLeftMoneyMainPanel.Location = new System.Drawing.Point(3, 415);
+            this.DayLeftMoneyMainPanel.Controls.Add(this.label29);
+            this.DayLeftMoneyMainPanel.Controls.Add(this.guna2PictureBox6);
+            this.DayLeftMoneyMainPanel.Location = new System.Drawing.Point(3, 414);
             this.DayLeftMoneyMainPanel.Name = "DayLeftMoneyMainPanel";
             this.DayLeftMoneyMainPanel.Padding = new System.Windows.Forms.Padding(20);
-            this.DayLeftMoneyMainPanel.Size = new System.Drawing.Size(953, 200);
+            this.DayLeftMoneyMainPanel.Size = new System.Drawing.Size(1139, 135);
             this.DayLeftMoneyMainPanel.TabIndex = 8;
-            // 
-            // DayLeftMoneyMainLabel
-            // 
-            this.DayLeftMoneyMainLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.DayLeftMoneyMainLabel.BackColor = System.Drawing.Color.Transparent;
-            this.DayLeftMoneyMainLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DayLeftMoneyMainLabel.Location = new System.Drawing.Point(26, 20);
-            this.DayLeftMoneyMainLabel.Name = "DayLeftMoneyMainLabel";
-            this.DayLeftMoneyMainLabel.Size = new System.Drawing.Size(904, 160);
-            this.DayLeftMoneyMainLabel.TabIndex = 0;
-            this.DayLeftMoneyMainLabel.Text = "На этот день у вас осталось *** ";
-            this.DayLeftMoneyMainLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ChartSpentsMainPanel
             // 
@@ -400,11 +366,45 @@
             this.ChartSpentsMainPanel.Controls.Add(this.flowLayoutPanel4);
             this.ChartSpentsMainPanel.Controls.Add(this.ChartCenterLabel);
             this.ChartSpentsMainPanel.Controls.Add(this.MainChartCategories);
-            this.ChartSpentsMainPanel.Location = new System.Drawing.Point(3, 621);
+            this.ChartSpentsMainPanel.Location = new System.Drawing.Point(3, 555);
             this.ChartSpentsMainPanel.Name = "ChartSpentsMainPanel";
             this.ChartSpentsMainPanel.Padding = new System.Windows.Forms.Padding(20);
-            this.ChartSpentsMainPanel.Size = new System.Drawing.Size(953, 552);
+            this.ChartSpentsMainPanel.Size = new System.Drawing.Size(1139, 552);
             this.ChartSpentsMainPanel.TabIndex = 9;
+            // 
+            // CategotyTitleChart
+            // 
+            this.CategotyTitleChart.AutoSize = true;
+            this.CategotyTitleChart.BackColor = System.Drawing.Color.Transparent;
+            this.CategotyTitleChart.Location = new System.Drawing.Point(441, 10);
+            this.CategotyTitleChart.Name = "CategotyTitleChart";
+            this.CategotyTitleChart.Size = new System.Drawing.Size(299, 31);
+            this.CategotyTitleChart.TabIndex = 16;
+            this.CategotyTitleChart.Text = "Статистика по категориям";
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.AutoScroll = true;
+            this.flowLayoutPanel4.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel4.Controls.Add(this.tableLayoutPanelCategories);
+            this.flowLayoutPanel4.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(23, 53);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(581, 476);
+            this.flowLayoutPanel4.TabIndex = 15;
+            // 
+            // tableLayoutPanelCategories
+            // 
+            this.tableLayoutPanelCategories.AutoSize = true;
+            this.tableLayoutPanelCategories.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanelCategories.ColumnCount = 1;
+            this.tableLayoutPanelCategories.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelCategories.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanelCategories.Name = "tableLayoutPanelCategories";
+            this.tableLayoutPanelCategories.RowCount = 1;
+            this.tableLayoutPanelCategories.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelCategories.Size = new System.Drawing.Size(0, 0);
+            this.tableLayoutPanelCategories.TabIndex = 14;
             // 
             // ChartCenterLabel
             // 
@@ -423,7 +423,7 @@
             this.MainChartCategories.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.MainChartCategories.Legends.Add(legend1);
-            this.MainChartCategories.Location = new System.Drawing.Point(424, 23);
+            this.MainChartCategories.Location = new System.Drawing.Point(610, 23);
             this.MainChartCategories.Name = "MainChartCategories";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
@@ -440,7 +440,7 @@
             this.WarningMainLabel.ForeColor = System.Drawing.Color.IndianRed;
             this.WarningMainLabel.Location = new System.Drawing.Point(20, 20);
             this.WarningMainLabel.Name = "WarningMainLabel";
-            this.WarningMainLabel.Size = new System.Drawing.Size(1016, 903);
+            this.WarningMainLabel.Size = new System.Drawing.Size(1179, 903);
             this.WarningMainLabel.TabIndex = 0;
             this.WarningMainLabel.Text = "Для начала необходимо добавить новый бюджет";
             this.WarningMainLabel.Visible = false;
@@ -475,7 +475,7 @@
             // 
             this.splitContainer2.Panel2.Controls.Add(this.settingsPictureBoxStat);
             this.splitContainer2.Size = new System.Drawing.Size(1298, 943);
-            this.splitContainer2.SplitterDistance = 1056;
+            this.splitContainer2.SplitterDistance = 1219;
             this.splitContainer2.TabIndex = 1;
             // 
             // flowLayoutPanel2
@@ -488,7 +488,7 @@
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(20, 20);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1016, 903);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(1179, 903);
             this.flowLayoutPanel2.TabIndex = 0;
             // 
             // guna2CustomGradientPanel8
@@ -501,8 +501,42 @@
             this.guna2CustomGradientPanel8.Location = new System.Drawing.Point(3, 3);
             this.guna2CustomGradientPanel8.Name = "guna2CustomGradientPanel8";
             this.guna2CustomGradientPanel8.Padding = new System.Windows.Forms.Padding(20);
-            this.guna2CustomGradientPanel8.Size = new System.Drawing.Size(953, 552);
+            this.guna2CustomGradientPanel8.Size = new System.Drawing.Size(1139, 552);
             this.guna2CustomGradientPanel8.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(312, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(299, 31);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Статистика по категориям";
+            // 
+            // CategotyFlowLayoutPanel
+            // 
+            this.CategotyFlowLayoutPanel.AutoScroll = true;
+            this.CategotyFlowLayoutPanel.BackColor = System.Drawing.Color.Transparent;
+            this.CategotyFlowLayoutPanel.Controls.Add(this.tableLayoutPanelCategoriesStatistics);
+            this.CategotyFlowLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.CategotyFlowLayoutPanel.Location = new System.Drawing.Point(23, 53);
+            this.CategotyFlowLayoutPanel.Name = "CategotyFlowLayoutPanel";
+            this.CategotyFlowLayoutPanel.Size = new System.Drawing.Size(581, 476);
+            this.CategotyFlowLayoutPanel.TabIndex = 12;
+            // 
+            // tableLayoutPanelCategoriesStatistics
+            // 
+            this.tableLayoutPanelCategoriesStatistics.AutoSize = true;
+            this.tableLayoutPanelCategoriesStatistics.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanelCategoriesStatistics.ColumnCount = 1;
+            this.tableLayoutPanelCategoriesStatistics.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelCategoriesStatistics.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanelCategoriesStatistics.Name = "tableLayoutPanelCategoriesStatistics";
+            this.tableLayoutPanelCategoriesStatistics.RowCount = 1;
+            this.tableLayoutPanelCategoriesStatistics.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelCategoriesStatistics.Size = new System.Drawing.Size(0, 0);
+            this.tableLayoutPanelCategoriesStatistics.TabIndex = 15;
             // 
             // CategoriesChart
             // 
@@ -511,7 +545,7 @@
             this.CategoriesChart.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.CategoriesChart.Legends.Add(legend2);
-            this.CategoriesChart.Location = new System.Drawing.Point(424, 23);
+            this.CategoriesChart.Location = new System.Drawing.Point(610, 23);
             this.CategoriesChart.Name = "CategoriesChart";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
@@ -529,7 +563,7 @@
             this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(3, 561);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.Padding = new System.Windows.Forms.Padding(20);
-            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(953, 552);
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1139, 552);
             this.guna2CustomGradientPanel2.TabIndex = 12;
             // 
             // AllTransactionCatChart
@@ -558,7 +592,7 @@
             this.ExpensesGradientPanel.Location = new System.Drawing.Point(3, 1119);
             this.ExpensesGradientPanel.Name = "ExpensesGradientPanel";
             this.ExpensesGradientPanel.Padding = new System.Windows.Forms.Padding(20);
-            this.ExpensesGradientPanel.Size = new System.Drawing.Size(953, 552);
+            this.ExpensesGradientPanel.Size = new System.Drawing.Size(1139, 552);
             this.ExpensesGradientPanel.TabIndex = 13;
             // 
             // ExStatfFowLayoutPanel
@@ -568,7 +602,7 @@
             this.ExStatfFowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ExStatfFowLayoutPanel.Location = new System.Drawing.Point(20, 20);
             this.ExStatfFowLayoutPanel.Name = "ExStatfFowLayoutPanel";
-            this.ExStatfFowLayoutPanel.Size = new System.Drawing.Size(913, 512);
+            this.ExStatfFowLayoutPanel.Size = new System.Drawing.Size(1099, 512);
             this.ExStatfFowLayoutPanel.TabIndex = 0;
             // 
             // IncomesGradientPanel
@@ -583,7 +617,7 @@
             this.IncomesGradientPanel.Location = new System.Drawing.Point(3, 1677);
             this.IncomesGradientPanel.Name = "IncomesGradientPanel";
             this.IncomesGradientPanel.Padding = new System.Windows.Forms.Padding(20);
-            this.IncomesGradientPanel.Size = new System.Drawing.Size(953, 552);
+            this.IncomesGradientPanel.Size = new System.Drawing.Size(1139, 552);
             this.IncomesGradientPanel.TabIndex = 14;
             // 
             // IncomeStatfFowLayoutPanel
@@ -593,8 +627,20 @@
             this.IncomeStatfFowLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.IncomeStatfFowLayoutPanel.Location = new System.Drawing.Point(20, 20);
             this.IncomeStatfFowLayoutPanel.Name = "IncomeStatfFowLayoutPanel";
-            this.IncomeStatfFowLayoutPanel.Size = new System.Drawing.Size(913, 512);
+            this.IncomeStatfFowLayoutPanel.Size = new System.Drawing.Size(1099, 512);
             this.IncomeStatfFowLayoutPanel.TabIndex = 0;
+            // 
+            // WarningStatLabel
+            // 
+            this.WarningStatLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.WarningStatLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 25F, System.Drawing.FontStyle.Bold);
+            this.WarningStatLabel.ForeColor = System.Drawing.Color.IndianRed;
+            this.WarningStatLabel.Location = new System.Drawing.Point(20, 20);
+            this.WarningStatLabel.Name = "WarningStatLabel";
+            this.WarningStatLabel.Size = new System.Drawing.Size(1179, 903);
+            this.WarningStatLabel.TabIndex = 1;
+            this.WarningStatLabel.Text = "Для начала необходимо добавить новый бюджет";
+            this.WarningStatLabel.Visible = false;
             // 
             // GoalsPage
             // 
@@ -626,7 +672,7 @@
             // 
             this.splitContainer3.Panel2.Controls.Add(this.SettingsPictureBoxGoals);
             this.splitContainer3.Size = new System.Drawing.Size(1298, 943);
-            this.splitContainer3.SplitterDistance = 1056;
+            this.splitContainer3.SplitterDistance = 1219;
             this.splitContainer3.TabIndex = 2;
             // 
             // flowLayoutPanel3
@@ -638,7 +684,7 @@
             this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel3.Location = new System.Drawing.Point(20, 20);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(1016, 903);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(1179, 903);
             this.flowLayoutPanel3.TabIndex = 0;
             // 
             // AddTransferToGoalPanel4
@@ -650,7 +696,7 @@
             this.AddTransferToGoalPanel4.Controls.Add(this.guna2PictureBox1);
             this.AddTransferToGoalPanel4.Location = new System.Drawing.Point(3, 3);
             this.AddTransferToGoalPanel4.Name = "AddTransferToGoalPanel4";
-            this.AddTransferToGoalPanel4.Size = new System.Drawing.Size(953, 200);
+            this.AddTransferToGoalPanel4.Size = new System.Drawing.Size(1139, 200);
             this.AddTransferToGoalPanel4.TabIndex = 10;
             this.AddTransferToGoalPanel4.Click += new System.EventHandler(this.guna2CustomGradientPanel4_Click);
             // 
@@ -685,7 +731,7 @@
             this.guna2CustomGradientPanel10.Controls.Add(this.guna2PictureBox2);
             this.guna2CustomGradientPanel10.Location = new System.Drawing.Point(3, 209);
             this.guna2CustomGradientPanel10.Name = "guna2CustomGradientPanel10";
-            this.guna2CustomGradientPanel10.Size = new System.Drawing.Size(953, 200);
+            this.guna2CustomGradientPanel10.Size = new System.Drawing.Size(1139, 200);
             this.guna2CustomGradientPanel10.TabIndex = 11;
             this.guna2CustomGradientPanel10.Click += new System.EventHandler(this.guna2PictureBox2_Click);
             // 
@@ -710,6 +756,18 @@
             this.label17.TabIndex = 1;
             this.label17.Text = "Добавить новую цель ";
             this.label17.Click += new System.EventHandler(this.guna2PictureBox2_Click);
+            // 
+            // WarningGoalsLabel
+            // 
+            this.WarningGoalsLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.WarningGoalsLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 25F, System.Drawing.FontStyle.Bold);
+            this.WarningGoalsLabel.ForeColor = System.Drawing.Color.IndianRed;
+            this.WarningGoalsLabel.Location = new System.Drawing.Point(20, 20);
+            this.WarningGoalsLabel.Name = "WarningGoalsLabel";
+            this.WarningGoalsLabel.Size = new System.Drawing.Size(1179, 903);
+            this.WarningGoalsLabel.TabIndex = 2;
+            this.WarningGoalsLabel.Text = "Для начала необходимо добавить новый бюджет";
+            this.WarningGoalsLabel.Visible = false;
             // 
             // BudgetPage
             // 
@@ -740,7 +798,7 @@
             // 
             this.splitContainer4.Panel2.Controls.Add(this.SettingsPictureBoxBudget);
             this.splitContainer4.Size = new System.Drawing.Size(1298, 943);
-            this.splitContainer4.SplitterDistance = 1056;
+            this.splitContainer4.SplitterDistance = 1219;
             this.splitContainer4.TabIndex = 2;
             // 
             // flowLayoutPanel5
@@ -753,7 +811,8 @@
             this.flowLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel5.Location = new System.Drawing.Point(20, 20);
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(1016, 903);
+            this.flowLayoutPanel5.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
+            this.flowLayoutPanel5.Size = new System.Drawing.Size(1179, 903);
             this.flowLayoutPanel5.TabIndex = 0;
             // 
             // guna2CustomGradientPanel6
@@ -765,7 +824,7 @@
             this.guna2CustomGradientPanel6.Location = new System.Drawing.Point(3, 3);
             this.guna2CustomGradientPanel6.Name = "guna2CustomGradientPanel6";
             this.guna2CustomGradientPanel6.Padding = new System.Windows.Forms.Padding(20);
-            this.guna2CustomGradientPanel6.Size = new System.Drawing.Size(953, 132);
+            this.guna2CustomGradientPanel6.Size = new System.Drawing.Size(1139, 132);
             this.guna2CustomGradientPanel6.TabIndex = 9;
             // 
             // AddBudgetTextBox
@@ -783,7 +842,7 @@
             this.AddBudgetTextBox.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.AddBudgetTextBox.ForeColor = System.Drawing.Color.Black;
             this.AddBudgetTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.AddBudgetTextBox.Location = new System.Drawing.Point(488, 24);
+            this.AddBudgetTextBox.Location = new System.Drawing.Point(674, 24);
             this.AddBudgetTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.AddBudgetTextBox.Name = "AddBudgetTextBox";
             this.AddBudgetTextBox.PlaceholderText = "";
@@ -814,7 +873,7 @@
             this.guna2CustomGradientPanel7.Location = new System.Drawing.Point(3, 141);
             this.guna2CustomGradientPanel7.Name = "guna2CustomGradientPanel7";
             this.guna2CustomGradientPanel7.Padding = new System.Windows.Forms.Padding(20);
-            this.guna2CustomGradientPanel7.Size = new System.Drawing.Size(953, 323);
+            this.guna2CustomGradientPanel7.Size = new System.Drawing.Size(1139, 323);
             this.guna2CustomGradientPanel7.TabIndex = 12;
             // 
             // label12
@@ -836,7 +895,7 @@
             this.BudgetEndDateTimePicker.FillColor = System.Drawing.Color.MediumPurple;
             this.BudgetEndDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BudgetEndDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.BudgetEndDateTimePicker.Location = new System.Drawing.Point(488, 163);
+            this.BudgetEndDateTimePicker.Location = new System.Drawing.Point(674, 163);
             this.BudgetEndDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.BudgetEndDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.BudgetEndDateTimePicker.Name = "BudgetEndDateTimePicker";
@@ -852,7 +911,7 @@
             this.BudgetStartDateTimePicker.FillColor = System.Drawing.Color.PaleTurquoise;
             this.BudgetStartDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BudgetStartDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.BudgetStartDateTimePicker.Location = new System.Drawing.Point(488, 23);
+            this.BudgetStartDateTimePicker.Location = new System.Drawing.Point(674, 23);
             this.BudgetStartDateTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.BudgetStartDateTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.BudgetStartDateTimePicker.Name = "BudgetStartDateTimePicker";
@@ -880,7 +939,7 @@
             this.guna2CustomGradientPanel9.Location = new System.Drawing.Point(3, 470);
             this.guna2CustomGradientPanel9.Name = "guna2CustomGradientPanel9";
             this.guna2CustomGradientPanel9.Padding = new System.Windows.Forms.Padding(20);
-            this.guna2CustomGradientPanel9.Size = new System.Drawing.Size(953, 150);
+            this.guna2CustomGradientPanel9.Size = new System.Drawing.Size(1139, 132);
             this.guna2CustomGradientPanel9.TabIndex = 13;
             // 
             // transferToGoalTextBox
@@ -898,22 +957,23 @@
             this.transferToGoalTextBox.Font = new System.Drawing.Font("Segoe UI", 20F);
             this.transferToGoalTextBox.ForeColor = System.Drawing.Color.Black;
             this.transferToGoalTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.transferToGoalTextBox.Location = new System.Drawing.Point(488, 24);
+            this.transferToGoalTextBox.Location = new System.Drawing.Point(674, 24);
             this.transferToGoalTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.transferToGoalTextBox.Name = "transferToGoalTextBox";
             this.transferToGoalTextBox.PlaceholderText = "";
             this.transferToGoalTextBox.SelectedText = "";
-            this.transferToGoalTextBox.Size = new System.Drawing.Size(442, 102);
+            this.transferToGoalTextBox.Size = new System.Drawing.Size(442, 84);
             this.transferToGoalTextBox.TabIndex = 3;
             this.transferToGoalTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.transferToGoalTextBox1_KeyPress);
             // 
             // label13
             // 
+            this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
-            this.label13.Location = new System.Drawing.Point(23, 24);
+            this.label13.Location = new System.Drawing.Point(23, 43);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(414, 102);
+            this.label13.Size = new System.Drawing.Size(573, 46);
             this.label13.TabIndex = 2;
             this.label13.Text = "Какую сумму вы хотите отложить?";
             // 
@@ -928,9 +988,9 @@
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.guna2Button1.ForeColor = System.Drawing.SystemColors.Window;
-            this.guna2Button1.Location = new System.Drawing.Point(3, 626);
+            this.guna2Button1.Location = new System.Drawing.Point(3, 608);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(953, 70);
+            this.guna2Button1.Size = new System.Drawing.Size(1139, 70);
             this.guna2Button1.TabIndex = 14;
             this.guna2Button1.Text = "Сохранить бюджет";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -976,98 +1036,6 @@
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // tableLayoutPanelCategories
-            // 
-            this.tableLayoutPanelCategories.AutoSize = true;
-            this.tableLayoutPanelCategories.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanelCategories.ColumnCount = 1;
-            this.tableLayoutPanelCategories.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelCategories.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanelCategories.Name = "tableLayoutPanelCategories";
-            this.tableLayoutPanelCategories.RowCount = 1;
-            this.tableLayoutPanelCategories.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelCategories.Size = new System.Drawing.Size(0, 0);
-            this.tableLayoutPanelCategories.TabIndex = 14;
-            // 
-            // tableLayoutPanelCategoriesStatistics
-            // 
-            this.tableLayoutPanelCategoriesStatistics.AutoSize = true;
-            this.tableLayoutPanelCategoriesStatistics.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanelCategoriesStatistics.ColumnCount = 1;
-            this.tableLayoutPanelCategoriesStatistics.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelCategoriesStatistics.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanelCategoriesStatistics.Name = "tableLayoutPanelCategoriesStatistics";
-            this.tableLayoutPanelCategoriesStatistics.RowCount = 1;
-            this.tableLayoutPanelCategoriesStatistics.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanelCategoriesStatistics.Size = new System.Drawing.Size(0, 0);
-            this.tableLayoutPanelCategoriesStatistics.TabIndex = 15;
-            // 
-            // CategotyFlowLayoutPanel
-            // 
-            this.CategotyFlowLayoutPanel.AutoScroll = true;
-            this.CategotyFlowLayoutPanel.BackColor = System.Drawing.Color.Transparent;
-            this.CategotyFlowLayoutPanel.Controls.Add(this.tableLayoutPanelCategoriesStatistics);
-            this.CategotyFlowLayoutPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.CategotyFlowLayoutPanel.Location = new System.Drawing.Point(23, 53);
-            this.CategotyFlowLayoutPanel.Name = "CategotyFlowLayoutPanel";
-            this.CategotyFlowLayoutPanel.Size = new System.Drawing.Size(395, 476);
-            this.CategotyFlowLayoutPanel.TabIndex = 12;
-            // 
-            // flowLayoutPanel4
-            // 
-            this.flowLayoutPanel4.AutoScroll = true;
-            this.flowLayoutPanel4.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel4.Controls.Add(this.tableLayoutPanelCategories);
-            this.flowLayoutPanel4.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(23, 53);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(395, 476);
-            this.flowLayoutPanel4.TabIndex = 15;
-            // 
-            // WarningStatLabel
-            // 
-            this.WarningStatLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.WarningStatLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 25F, System.Drawing.FontStyle.Bold);
-            this.WarningStatLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.WarningStatLabel.Location = new System.Drawing.Point(20, 20);
-            this.WarningStatLabel.Name = "WarningStatLabel";
-            this.WarningStatLabel.Size = new System.Drawing.Size(1016, 903);
-            this.WarningStatLabel.TabIndex = 1;
-            this.WarningStatLabel.Text = "Для начала необходимо добавить новый бюджет";
-            this.WarningStatLabel.Visible = false;
-            // 
-            // WarningGoalsLabel
-            // 
-            this.WarningGoalsLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.WarningGoalsLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 25F, System.Drawing.FontStyle.Bold);
-            this.WarningGoalsLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.WarningGoalsLabel.Location = new System.Drawing.Point(20, 20);
-            this.WarningGoalsLabel.Name = "WarningGoalsLabel";
-            this.WarningGoalsLabel.Size = new System.Drawing.Size(1016, 903);
-            this.WarningGoalsLabel.TabIndex = 2;
-            this.WarningGoalsLabel.Text = "Для начала необходимо добавить новый бюджет";
-            this.WarningGoalsLabel.Visible = false;
-            // 
-            // CategotyTitleChart
-            // 
-            this.CategotyTitleChart.AutoSize = true;
-            this.CategotyTitleChart.BackColor = System.Drawing.Color.Transparent;
-            this.CategotyTitleChart.Location = new System.Drawing.Point(335, 11);
-            this.CategotyTitleChart.Name = "CategotyTitleChart";
-            this.CategotyTitleChart.Size = new System.Drawing.Size(299, 31);
-            this.CategotyTitleChart.TabIndex = 16;
-            this.CategotyTitleChart.Text = "Статистика по категориям";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(312, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(299, 31);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Статистика по категориям";
-            // 
             // NewNoteMainPoctireBox
             // 
             this.NewNoteMainPoctireBox.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -1076,7 +1044,7 @@
             this.NewNoteMainPoctireBox.FillColor = System.Drawing.Color.CornflowerBlue;
             this.NewNoteMainPoctireBox.Image = global::WalletApp.Properties.Resources.add_circle_create_expand_new_plus_icon_123218;
             this.NewNoteMainPoctireBox.ImageRotate = 0F;
-            this.NewNoteMainPoctireBox.Location = new System.Drawing.Point(26, 27);
+            this.NewNoteMainPoctireBox.Location = new System.Drawing.Point(23, 26);
             this.NewNoteMainPoctireBox.Name = "NewNoteMainPoctireBox";
             this.NewNoteMainPoctireBox.Size = new System.Drawing.Size(150, 150);
             this.NewNoteMainPoctireBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1086,8 +1054,9 @@
             // 
             // SettingsPictureBoxMain
             // 
+            this.SettingsPictureBoxMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.SettingsPictureBoxMain.Image = global::WalletApp.Properties.Resources._1904675_configuration_edit_gear_options_preferences_setting_settings_122525;
-            this.SettingsPictureBoxMain.Location = new System.Drawing.Point(173, 5);
+            this.SettingsPictureBoxMain.Location = new System.Drawing.Point(10, 5);
             this.SettingsPictureBoxMain.Name = "SettingsPictureBoxMain";
             this.SettingsPictureBoxMain.Size = new System.Drawing.Size(60, 60);
             this.SettingsPictureBoxMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1097,8 +1066,9 @@
             // 
             // settingsPictureBoxStat
             // 
+            this.settingsPictureBoxStat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.settingsPictureBoxStat.Image = global::WalletApp.Properties.Resources._1904675_configuration_edit_gear_options_preferences_setting_settings_122525;
-            this.settingsPictureBoxStat.Location = new System.Drawing.Point(173, 5);
+            this.settingsPictureBoxStat.Location = new System.Drawing.Point(10, 5);
             this.settingsPictureBoxStat.Name = "settingsPictureBoxStat";
             this.settingsPictureBoxStat.Size = new System.Drawing.Size(60, 60);
             this.settingsPictureBoxStat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1108,7 +1078,6 @@
             // 
             // guna2PictureBox1
             // 
-            this.guna2PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.BorderRadius = 15;
             this.guna2PictureBox1.FillColor = System.Drawing.Color.CornflowerBlue;
@@ -1124,7 +1093,6 @@
             // 
             // guna2PictureBox2
             // 
-            this.guna2PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.BorderRadius = 15;
             this.guna2PictureBox2.FillColor = System.Drawing.Color.CornflowerBlue;
@@ -1140,8 +1108,9 @@
             // 
             // SettingsPictureBoxGoals
             // 
+            this.SettingsPictureBoxGoals.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.SettingsPictureBoxGoals.Image = global::WalletApp.Properties.Resources._1904675_configuration_edit_gear_options_preferences_setting_settings_122525;
-            this.SettingsPictureBoxGoals.Location = new System.Drawing.Point(173, 5);
+            this.SettingsPictureBoxGoals.Location = new System.Drawing.Point(10, 5);
             this.SettingsPictureBoxGoals.Name = "SettingsPictureBoxGoals";
             this.SettingsPictureBoxGoals.Size = new System.Drawing.Size(60, 60);
             this.SettingsPictureBoxGoals.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1151,14 +1120,212 @@
             // 
             // SettingsPictureBoxBudget
             // 
+            this.SettingsPictureBoxBudget.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.SettingsPictureBoxBudget.Image = global::WalletApp.Properties.Resources._1904675_configuration_edit_gear_options_preferences_setting_settings_122525;
-            this.SettingsPictureBoxBudget.Location = new System.Drawing.Point(175, 5);
+            this.SettingsPictureBoxBudget.Location = new System.Drawing.Point(12, 5);
             this.SettingsPictureBoxBudget.Name = "SettingsPictureBoxBudget";
             this.SettingsPictureBoxBudget.Size = new System.Drawing.Size(60, 60);
             this.SettingsPictureBoxBudget.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.SettingsPictureBoxBudget.TabIndex = 1;
             this.SettingsPictureBoxBudget.TabStop = false;
             this.SettingsPictureBoxBudget.Click += new System.EventHandler(this.settingsPictureBox_Click);
+            // 
+            // BudgetMainPanel
+            // 
+            this.BudgetMainPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BudgetMainPanel.BackColor = System.Drawing.Color.Transparent;
+            this.BudgetMainPanel.BorderRadius = 30;
+            this.BudgetMainPanel.Controls.Add(this.label5);
+            this.BudgetMainPanel.Controls.Add(this.guna2PictureBox7);
+            this.BudgetMainPanel.Controls.Add(this.label6);
+            this.BudgetMainPanel.Controls.Add(this.PlusMainLabel);
+            this.BudgetMainPanel.Location = new System.Drawing.Point(1, 0);
+            this.BudgetMainPanel.Name = "BudgetMainPanel";
+            this.BudgetMainPanel.Padding = new System.Windows.Forms.Padding(20);
+            this.BudgetMainPanel.Size = new System.Drawing.Size(370, 200);
+            this.BudgetMainPanel.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label5.Location = new System.Drawing.Point(26, 141);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(167, 29);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Всего доходов";
+            // 
+            // guna2PictureBox7
+            // 
+            this.guna2PictureBox7.Image = global::WalletApp.Properties.Resources.Group_463;
+            this.guna2PictureBox7.ImageRotate = 0F;
+            this.guna2PictureBox7.Location = new System.Drawing.Point(27, 35);
+            this.guna2PictureBox7.Name = "guna2PictureBox7";
+            this.guna2PictureBox7.Size = new System.Drawing.Size(45, 45);
+            this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox7.TabIndex = 8;
+            this.guna2PictureBox7.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label6.Location = new System.Drawing.Point(88, 44);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(112, 33);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Доходы";
+            // 
+            // PlusMainLabel
+            // 
+            this.PlusMainLabel.AutoSize = true;
+            this.PlusMainLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PlusMainLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(158)))), ((int)(((byte)(101)))));
+            this.PlusMainLabel.Location = new System.Drawing.Point(25, 103);
+            this.PlusMainLabel.Name = "PlusMainLabel";
+            this.PlusMainLabel.Size = new System.Drawing.Size(178, 36);
+            this.PlusMainLabel.TabIndex = 6;
+            this.PlusMainLabel.Text = "12300,00 р";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label7.Location = new System.Drawing.Point(21, 138);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(176, 29);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Всего расходов";
+            // 
+            // guna2PictureBox8
+            // 
+            this.guna2PictureBox8.Image = global::WalletApp.Properties.Resources.Group_47;
+            this.guna2PictureBox8.ImageRotate = 0F;
+            this.guna2PictureBox8.Location = new System.Drawing.Point(25, 32);
+            this.guna2PictureBox8.Name = "guna2PictureBox8";
+            this.guna2PictureBox8.Size = new System.Drawing.Size(45, 45);
+            this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox8.TabIndex = 9;
+            this.guna2PictureBox8.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label8.Location = new System.Drawing.Point(86, 41);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(119, 33);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Расходы";
+            // 
+            // MinusMainLabel
+            // 
+            this.MinusMainLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.MinusMainLabel.AutoSize = true;
+            this.MinusMainLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MinusMainLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(19)))), ((int)(((byte)(50)))));
+            this.MinusMainLabel.Location = new System.Drawing.Point(19, 103);
+            this.MinusMainLabel.Name = "MinusMainLabel";
+            this.MinusMainLabel.Size = new System.Drawing.Size(178, 36);
+            this.MinusMainLabel.TabIndex = 7;
+            this.MinusMainLabel.Text = "12300,00 р";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label9.Location = new System.Drawing.Point(25, 141);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(167, 29);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "Общий баланс";
+            // 
+            // guna2PictureBox9
+            // 
+            this.guna2PictureBox9.Image = global::WalletApp.Properties.Resources.Group_481;
+            this.guna2PictureBox9.ImageRotate = 0F;
+            this.guna2PictureBox9.Location = new System.Drawing.Point(25, 35);
+            this.guna2PictureBox9.Name = "guna2PictureBox9";
+            this.guna2PictureBox9.Size = new System.Drawing.Size(45, 45);
+            this.guna2PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox9.TabIndex = 10;
+            this.guna2PictureBox9.TabStop = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label18.Location = new System.Drawing.Point(83, 44);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(101, 33);
+            this.label18.TabIndex = 9;
+            this.label18.Text = "Баланс";
+            // 
+            // BudgetMainLabel
+            // 
+            this.BudgetMainLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.BudgetMainLabel.AutoSize = true;
+            this.BudgetMainLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BudgetMainLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(70)))), ((int)(((byte)(224)))));
+            this.BudgetMainLabel.Location = new System.Drawing.Point(19, 105);
+            this.BudgetMainLabel.Name = "BudgetMainLabel";
+            this.BudgetMainLabel.Size = new System.Drawing.Size(178, 36);
+            this.BudgetMainLabel.TabIndex = 8;
+            this.BudgetMainLabel.Text = "12300,00 р";
+            this.BudgetMainLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // DayLeftMoneyMainLabel
+            // 
+            this.DayLeftMoneyMainLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.DayLeftMoneyMainLabel.AutoSize = true;
+            this.DayLeftMoneyMainLabel.BackColor = System.Drawing.Color.Transparent;
+            this.DayLeftMoneyMainLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DayLeftMoneyMainLabel.ForeColor = System.Drawing.Color.Black;
+            this.DayLeftMoneyMainLabel.Location = new System.Drawing.Point(147, 57);
+            this.DayLeftMoneyMainLabel.Name = "DayLeftMoneyMainLabel";
+            this.DayLeftMoneyMainLabel.Size = new System.Drawing.Size(228, 46);
+            this.DayLeftMoneyMainLabel.TabIndex = 9;
+            this.DayLeftMoneyMainLabel.Text = "12300,00 р";
+            // 
+            // label29
+            // 
+            this.label29.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.Font = new System.Drawing.Font("Corbel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label29.Location = new System.Drawing.Point(148, 22);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(374, 37);
+            this.label29.TabIndex = 7;
+            this.label29.Text = "На этот день у вас осталось";
+            // 
+            // guna2PictureBox6
+            // 
+            this.guna2PictureBox6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2PictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox6.BorderRadius = 15;
+            this.guna2PictureBox6.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox6.Image = global::WalletApp.Properties.Resources.Group_50;
+            this.guna2PictureBox6.ImageRotate = 0F;
+            this.guna2PictureBox6.Location = new System.Drawing.Point(32, 22);
+            this.guna2PictureBox6.Name = "guna2PictureBox6";
+            this.guna2PictureBox6.Size = new System.Drawing.Size(90, 90);
+            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox6.TabIndex = 8;
+            this.guna2PictureBox6.TabStop = false;
             // 
             // MainForm
             // 
@@ -1185,15 +1352,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.NewNoteMainPanel.ResumeLayout(false);
             this.NewNoteMainPanel.PerformLayout();
             this.InfoPlusMinusBudgetMainPanel.ResumeLayout(false);
             this.MinusMainPanel.ResumeLayout(false);
+            this.MinusMainPanel.PerformLayout();
             this.PlusMainPanel.ResumeLayout(false);
-            this.BudgetMainPanel.ResumeLayout(false);
+            this.PlusMainPanel.PerformLayout();
             this.DayLeftMoneyMainPanel.ResumeLayout(false);
+            this.DayLeftMoneyMainPanel.PerformLayout();
             this.ChartSpentsMainPanel.ResumeLayout(false);
             this.ChartSpentsMainPanel.PerformLayout();
+            this.flowLayoutPanel4.ResumeLayout(false);
+            this.flowLayoutPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainChartCategories)).EndInit();
             this.statisticsPage.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
@@ -1203,6 +1375,8 @@
             this.flowLayoutPanel2.ResumeLayout(false);
             this.guna2CustomGradientPanel8.ResumeLayout(false);
             this.guna2CustomGradientPanel8.PerformLayout();
+            this.CategotyFlowLayoutPanel.ResumeLayout(false);
+            this.CategotyFlowLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CategoriesChart)).EndInit();
             this.guna2CustomGradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AllTransactionCatChart)).EndInit();
@@ -1229,11 +1403,8 @@
             this.guna2CustomGradientPanel7.ResumeLayout(false);
             this.guna2CustomGradientPanel7.PerformLayout();
             this.guna2CustomGradientPanel9.ResumeLayout(false);
+            this.guna2CustomGradientPanel9.PerformLayout();
             this.guna2CustomGradientPanel1.ResumeLayout(false);
-            this.CategotyFlowLayoutPanel.ResumeLayout(false);
-            this.CategotyFlowLayoutPanel.PerformLayout();
-            this.flowLayoutPanel4.ResumeLayout(false);
-            this.flowLayoutPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NewNoteMainPoctireBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.settingsPictureBoxStat)).EndInit();
@@ -1241,6 +1412,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxGoals)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxBudget)).EndInit();
+            this.BudgetMainPanel.ResumeLayout(false);
+            this.BudgetMainPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1257,14 +1434,9 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel ChartSpentsMainPanel;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel DayLeftMoneyMainPanel;
-        private System.Windows.Forms.Label DayLeftMoneyMainLabel;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel InfoPlusMinusBudgetMainPanel;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel MinusMainPanel;
-        private System.Windows.Forms.Label MinusMainLabel;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel PlusMainPanel;
-        private System.Windows.Forms.Label PlusMainLabel;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel BudgetMainPanel;
-        private System.Windows.Forms.Label BudgetMainLabel;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel NewNoteMainPanel;
         private System.Windows.Forms.Label NewNoteDescriptionMainLabel;
         private System.Windows.Forms.Label NewNoteMainLabel;
@@ -1320,5 +1492,21 @@
         private System.Windows.Forms.PictureBox SettingsPictureBoxMain;
         private System.Windows.Forms.PictureBox SettingsPictureBoxGoals;
         private System.Windows.Forms.PictureBox SettingsPictureBoxBudget;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel BudgetMainPanel;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label PlusMainLabel;
+        private System.Windows.Forms.Label label7;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox8;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label MinusMainLabel;
+        private System.Windows.Forms.Label label9;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox9;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label BudgetMainLabel;
+        private System.Windows.Forms.Label DayLeftMoneyMainLabel;
+        private System.Windows.Forms.Label label29;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
     }
 }

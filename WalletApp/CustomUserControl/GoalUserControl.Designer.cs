@@ -46,7 +46,7 @@
             this.guna2CustomGradientPanel5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(255)))), ((int)(((byte)(132)))));
             this.guna2CustomGradientPanel5.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(255)))), ((int)(((byte)(132)))));
             this.guna2CustomGradientPanel5.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(255)))), ((int)(((byte)(132)))));
-            this.guna2CustomGradientPanel5.Location = new System.Drawing.Point(686, 23);
+            this.guna2CustomGradientPanel5.Location = new System.Drawing.Point(872, 23);
             this.guna2CustomGradientPanel5.Name = "guna2CustomGradientPanel5";
             this.guna2CustomGradientPanel5.Padding = new System.Windows.Forms.Padding(15);
             this.guna2CustomGradientPanel5.Size = new System.Drawing.Size(244, 154);
@@ -84,14 +84,14 @@
             // 
             // guna2CustomGradientPanel10
             // 
-            this.guna2CustomGradientPanel10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.guna2CustomGradientPanel10.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.guna2CustomGradientPanel10.BorderRadius = 30;
             this.guna2CustomGradientPanel10.Controls.Add(this.GoalNameLabel);
             this.guna2CustomGradientPanel10.Controls.Add(this.GoalDescriptionLabel);
             this.guna2CustomGradientPanel10.Controls.Add(this.guna2CustomGradientPanel5);
             this.guna2CustomGradientPanel10.Location = new System.Drawing.Point(0, 0);
             this.guna2CustomGradientPanel10.Name = "guna2CustomGradientPanel10";
-            this.guna2CustomGradientPanel10.Size = new System.Drawing.Size(953, 200);
+            this.guna2CustomGradientPanel10.Size = new System.Drawing.Size(1139, 200);
             this.guna2CustomGradientPanel10.TabIndex = 12;
             // 
             // GoalUserControl
@@ -103,7 +103,7 @@
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Name = "GoalUserControl";
             this.Padding = new System.Windows.Forms.Padding(20);
-            this.Size = new System.Drawing.Size(953, 200);
+            this.Size = new System.Drawing.Size(1139, 200);
             this.Load += new System.EventHandler(this.GoalUserControl_Load);
             this.guna2CustomGradientPanel5.ResumeLayout(false);
             this.guna2CustomGradientPanel10.ResumeLayout(false);

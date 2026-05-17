@@ -23,12 +23,7 @@ namespace WalletApp.AppForms
 
         private void NewNoteForm_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "courseProjectDataSet.transactions". При необходимости она может быть перемещена или удалена.
-            this.transactionsTableAdapter.Fill(this.courseProjectDataSet.transactions);
             CategoryTypeComboBox.SelectedIndex = 0;
-            
-
-            
         }
 
         private void CancelButton_Click(object sender, EventArgs e)
@@ -46,7 +41,9 @@ namespace WalletApp.AppForms
                     .ToList();
                 if (categories.Count > 0)
                 {
-                    this.category_idLabel1.Visible = true;
+                    UnderCategoty_Label.Visible = true;
+                    label6.Visible = true;
+                    guna2PictureBox5.Visible = true;
                     CategoryComboBox1.Visible = true;
                     categories.Insert(0, new categories { category_id = 0, name = "--Выберите категорию--" });
 
@@ -61,7 +58,9 @@ namespace WalletApp.AppForms
                 // Если выбрана заглушка — список подкатегорий очищаем!
                 CategoryComboBox1.DataSource = null;
                 CategoryComboBox1.Visible = false;
-                category_idLabel1.Visible = false;
+                UnderCategoty_Label.Visible = false;
+                label6.Visible = false;
+                guna2PictureBox5.Visible = false;
             }
         }
 
@@ -74,7 +73,9 @@ namespace WalletApp.AppForms
                     .ToList();
                 if (categories.Count > 0) {
                     CategoryComboBox2.Visible = true;
-                    category_idLabel2.Visible = true;
+                    CategotyType_Label.Visible = true;
+                    label7.Visible = true;
+                    guna2PictureBox6.Visible = true;
                     categories.Insert(0, new categories { category_id = 0, name = "--Выберите категорию--" });
 
                     CategoryComboBox2.DataSource = new List<categories>(categories);
@@ -88,7 +89,9 @@ namespace WalletApp.AppForms
                 // Если выбрана заглушка — список подкатегорий очищаем!
                 CategoryComboBox2.DataSource = null;
                 CategoryComboBox2.Visible = false;
-                category_idLabel2.Visible = false;
+                CategotyType_Label.Visible = false;
+                label7.Visible = false;
+                guna2PictureBox6.Visible = false;
             }
         }
 
@@ -142,7 +145,9 @@ namespace WalletApp.AppForms
 
                 if (categories.Count > 0)
                 {
-                    this.category_idLabel.Visible = true;
+                    Category_Label.Visible = true;
+                    label3.Visible = true;
+                    guna2PictureBox4.Visible = true;
                     CategoryComboBox.Visible = true;
                     categories.Insert(0, new categories { category_id = 0, name = "--Выберите категорию--" });
 
@@ -157,7 +162,9 @@ namespace WalletApp.AppForms
                 // Если выбрана заглушка — список подкатегорий очищаем!
                 CategoryComboBox.DataSource = null;
                 CategoryComboBox.Visible = false;
-                category_idLabel.Visible = false;
+                Category_Label.Visible = false;
+                label3.Visible = false;
+                guna2PictureBox4.Visible = false;
             }
         }
 

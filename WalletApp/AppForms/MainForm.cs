@@ -47,9 +47,10 @@ namespace WalletApp.AppForms
 
         private void FillPages()
         {
-            
 
-            if (_period != null && _period.end_date>=DateTime.Now)
+
+            FillGoalsPage();
+            if (_period != null && _period.end_date >= DateTime.Now)
             {
                 _categoriesStat = GetCategoriesStatistics();
 
@@ -62,15 +63,16 @@ namespace WalletApp.AppForms
                     FillExpenseList();
                     FillIncomeList();
                     FillMainPage();
-                    FillGoalsPage();
                     FillStatisticPage();
                 }
+                List<savings_goals> savings_Goals = Program.context.savings_goals.Where(p => p.user_id == _user.user_id).OrderBy(p => p.name).ToList();
+                
             }
             else
             {
                 flowLayoutPanel1.Visible = false;
                 flowLayoutPanel2.Visible = false;
-                flowLayoutPanel3.Visible = false;
+                //flowLayoutPanel3.Visible = false;
                 WarningMainLabel.Visible = true;
                 WarningGoalsLabel.Visible = true;
                 WarningStatLabel.Visible = true;
@@ -171,15 +173,20 @@ namespace WalletApp.AppForms
             if (transactions.Count >= 1)
             {
                 ChartSpentsMainPanel.Visible = true;
+                guna2CustomGradientPanel8.Visible = true;
                 _categoriesStat = GetCategoriesStatistics();
 
                 RenderPieChart(_categoriesStat, MainChartCategories, tableLayoutPanelCategories);
             }
-            else ChartSpentsMainPanel.Visible = false;
+            else 
+            { 
+                ChartSpentsMainPanel.Visible = false;
+                guna2CustomGradientPanel8.Visible = false;
+            }
 
             if (_period != null)
             {
-                BudgetMainLabel.Text = "Бюджет \n\n" + $"{_period.planned_budget.ToString():N0} ₽";
+                BudgetMainLabel.Text =  $"{_period.planned_budget.ToString():N0} ₽";
             }
             else
             {
@@ -197,9 +204,9 @@ namespace WalletApp.AppForms
                 .Where(t => !t.is_income)
                 .Sum(t => t.amount).ToString();
 
-            PlusMainLabel.Text = "Доходы \n\n" + $"{incomes:N0} ₽";// $"{item.TotalAmount:N0} ₽"
+            PlusMainLabel.Text = $"{incomes:N0} ₽";
 
-            MinusMainLabel.Text = "Расходы \n\n" + $"{spent:N0} ₽";
+            MinusMainLabel.Text = $"{spent:N0} ₽";
             ChartCenterLabel.Text = $"{spentCategoryChart:N0} ₽";
 
             decimal spentForDay = transactions
@@ -210,7 +217,7 @@ namespace WalletApp.AppForms
             int inclusiveDays = (int)(_period.end_date.Date - _period.start_date.Date).TotalDays + 1;
             decimal leftMoneyForDay = (decimal)(_period.planned_budget / (_period.end_date - _period.start_date).Days - spentForDay);
 
-            DayLeftMoneyMainLabel.Text = "На этот день у вас осталось " + leftMoneyForDay.ToString("N2");
+            DayLeftMoneyMainLabel.Text = $"{leftMoneyForDay.ToString("N2")} ₽";
         }
 
         private void FillStatisticPage()
@@ -277,11 +284,14 @@ namespace WalletApp.AppForms
                     var saves = new GoalUserControl(savings);
                     flowLayoutPanel3.Controls.Add(saves);
                 }
+                    guna2CustomGradientPanel9.Visible = true;
             }
             else
             {
                 AddTransferToGoalPanel4.Visible = false;
+                  guna2CustomGradientPanel9.Visible = false;
             }
+            
         }
 
         

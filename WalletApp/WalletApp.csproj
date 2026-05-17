@@ -204,12 +204,35 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Docs\" />
+    <Folder Include="SFGFDSG\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\add_circle_create_expand_new_plus_icon_123218.png" />
     <None Include="Resources\not-visible-interface-symbol-of-an-eye-with-a-slash-on-it_icon-icons.com_57783.png" />
     <None Include="Resources\4115230-cancel-close-cross-delete_114048.png" />
     <None Include="Resources\1904675-configuration-edit-gear-options-preferences-setting-settings_122525.png" />
+    <None Include="Resources\Group 452.png" />
+    <None Include="Resources\Group 463.png" />
+    <None Include="Resources\Group 481.png" />
+    <None Include="Resources\Group 491.png" />
+    <None Include="Resources\Income5.png" />
+    <None Include="Resources\Label.png" />
+    <None Include="Resources\Rectangle 562.png" />
+    <None Include="Resources\Group 50.png" />
+    <None Include="Resources\List.png" />
+    <None Include="Resources\not_visible_interface_symbol_of_an_eye_with_a_slash_on_it_icon_icons.png" />
+    <None Include="Resources\AddDoc.png" />
+    <None Include="Resources\add_circle_create_expand_new_plus_icon_1232181.png" />
+    <None Include="Resources\Background 1.png" />
+    <None Include="Resources\Background first.png" />
+    <None Include="Resources\Circle.png" />
+    <None Include="Resources\Finance1.png" />
+    <None Include="Resources\Folder.png" />
+    <None Include="Resources\Group 45.png" />
+    <None Include="Resources\Group 47.png" />
+    <None Include="Resources\Group 49.png" />
+    <None Include="Resources\Ruble.png" />
+    <None Include="Resources\Something.png" />
     <Content Include="wallet_payment_purchase_coin_cash_money_icon_141978.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
