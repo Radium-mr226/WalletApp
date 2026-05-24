@@ -42,6 +42,16 @@
             is_incomeLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
+            // is_incomeLabel
+            // 
+            is_incomeLabel.AutoSize = true;
+            is_incomeLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
+            is_incomeLabel.Location = new System.Drawing.Point(31, 26);
+            is_incomeLabel.Name = "is_incomeLabel";
+            is_incomeLabel.Size = new System.Drawing.Size(249, 46);
+            is_incomeLabel.TabIndex = 34;
+            is_incomeLabel.Text = "Выберите тип:";
+            // 
             // category_idLabel2
             // 
             this.category_idLabel2.AutoSize = true;
@@ -190,20 +200,11 @@
             this.CategoryTypeComboBox.TabIndex = 35;
             this.CategoryTypeComboBox.SelectedIndexChanged += new System.EventHandler(this.CategoryTypeComboBox_SelectedIndexChanged);
             // 
-            // is_incomeLabel
-            // 
-            is_incomeLabel.AutoSize = true;
-            is_incomeLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
-            is_incomeLabel.Location = new System.Drawing.Point(31, 26);
-            is_incomeLabel.Name = "is_incomeLabel";
-            is_incomeLabel.Size = new System.Drawing.Size(249, 46);
-            is_incomeLabel.TabIndex = 34;
-            is_incomeLabel.Text = "Выберите тип:";
-            // 
             // NewCategoryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(205)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(869, 498);
             this.Controls.Add(this.CategoryTypeComboBox);
             this.Controls.Add(is_incomeLabel);
