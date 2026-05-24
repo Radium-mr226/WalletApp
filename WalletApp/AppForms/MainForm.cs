@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -208,6 +209,8 @@ namespace WalletApp.AppForms
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
+            
+        }
 
             // Проверка: сумма бюджета должна быть заполнена
             if (string.IsNullOrWhiteSpace(AddBudgetTextBox.Text) || AddBudgetTextBox.Text.Length <= 1)
@@ -649,5 +652,6 @@ namespace WalletApp.AppForms
             // Все остальные символы блокируем
             e.Handled = true;
         }
+
     }
 }

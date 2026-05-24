@@ -45,7 +45,6 @@
             this.NewNoteMainPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.NewNoteDescriptionMainLabel = new System.Windows.Forms.Label();
             this.NewNoteMainLabel = new System.Windows.Forms.Label();
-            this.NewNoteMainPoctireBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.InfoPlusMinusBudgetMainPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.MinusMainPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.label7 = new System.Windows.Forms.Label();
@@ -124,7 +123,6 @@
             this.splitContainer1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.NewNoteMainPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NewNoteMainPoctireBox)).BeginInit();
             this.InfoPlusMinusBudgetMainPanel.SuspendLayout();
             this.MinusMainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
@@ -171,6 +169,18 @@
             this.guna2CustomGradientPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxBudget)).BeginInit();
             this.guna2CustomGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NewNoteMainPoctireBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxMain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.settingsPictureBoxStat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxGoals)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxBudget)).BeginInit();
+            this.BudgetMainPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2TabControl1
@@ -1246,7 +1256,6 @@
             this.flowLayoutPanel1.PerformLayout();
             this.NewNoteMainPanel.ResumeLayout(false);
             this.NewNoteMainPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NewNoteMainPoctireBox)).EndInit();
             this.InfoPlusMinusBudgetMainPanel.ResumeLayout(false);
             this.MinusMainPanel.ResumeLayout(false);
             this.MinusMainPanel.PerformLayout();
@@ -1304,6 +1313,19 @@
             this.guna2CustomGradientPanel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxBudget)).EndInit();
             this.guna2CustomGradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.NewNoteMainPoctireBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxMain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.settingsPictureBoxStat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxGoals)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SettingsPictureBoxBudget)).EndInit();
+            this.BudgetMainPanel.ResumeLayout(false);
+            this.BudgetMainPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
